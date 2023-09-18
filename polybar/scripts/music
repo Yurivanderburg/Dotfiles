@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+if [[ $(playerctl status) == "Playing"* ]]
+then 
+artist=$(playerctl metadata | grep artist | cut -d ' ' -f16-22)
+song=$(playerctl metadata | grep title | cut -d ' ' -f17-22)
+echo "$artist - $song"
+else echo ""
+fi

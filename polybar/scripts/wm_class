@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+wmclass=$(xprop -id $(xdotool getwindowfocus) WM_CLASS | cut -d '"' -f4)
+if [[ $wmclass == *"not found."* ]]
+then echo ""
+else echo "$wmclass"
+fi
