@@ -10,6 +10,7 @@
 # Set mod key
 set $mod Mod4
 
+
 # Font
 #font pango:JetBrainsMono Nerd Font 9
 font pango:MesloLGS NF 8.5
