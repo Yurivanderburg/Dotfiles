@@ -1,0 +1,6 @@
+"call plug#begin('~/.vim/plugged')
+
+" Example plugin
+"Plug 'tpope/vim-fugative'
+
+"call plug#end()

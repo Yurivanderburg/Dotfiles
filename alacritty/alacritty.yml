@@ -3,7 +3,7 @@ shell:
 font:
   normal:
     family: "MesloLGS NF"
-  size: 11
+  size: 9.5
 
 
 # Copyright (c) 2016-present Sven Greb <development@svengreb.de>
