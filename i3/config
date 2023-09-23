@@ -8,7 +8,7 @@ set $mod Mod4
 
 # Font
 #font pango:JetBrainsMono Nerd Font 9
-font pango:MesloLGS NF 7.5
+font pango:MesloLGS NF 9
 
 # Background image
 exec --no-startup-id feh --autostart --bg-scale ~/.config/i3/wallpaper/jay-mantri-TFyi0QOx08c-unsplash.jpg
@@ -45,6 +45,9 @@ bindsym $mod+q kill
 
 # Start polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# Set DPI
+#exec xrandr --dpi 192
 
 
 ## -------------------- App settings --------------------
