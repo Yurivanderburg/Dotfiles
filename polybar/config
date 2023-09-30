@@ -20,13 +20,17 @@
 ;==================== General settings ====================
 
 [colors]
-background = #282A2E
-background-alt = #373B41
-foreground = #C5C8C6
-primary = #F0C674
-secondary = #8ABEB7
-alert = #A54242
-disabled = #707880
+background = #2e3440
+background-active = #434c5e
+foreground = #d8dee9
+primary = #ebcb8b
+alert = #bf616a
+disabled = #9A9FAB
+separators = #d8dee9
+windowclass = #d08770
+spotify = #a3be8c
+vpn = #d08770
+
 
 [bar/main]
 width = 100%
@@ -34,9 +38,12 @@ height = 2.5%
 radius = 8
 dpi = 165
 
+
 background = ${colors.background}
 foreground = ${colors.foreground}
 
+
+; Sizes
 line-size = 3pt
 
 border-size = 3pt
@@ -48,15 +55,18 @@ padding-right = 1
 module-margin = 1
 
 separator = |
-separator-foreground = ${colors.disabled}
+separator-foreground = ${colors.separator}
 
 font-0 = "JetBrainsMono Nerd Font:pixelsize=8.5;4"
+
+;Define Shell
+POLYBAR_SHELL = $SHELL
 
 
 
 ;==================== Toggle modules ======================
 
-modules-left = xworkspaces wlan vpn
+modules-left = xworkspaces wlan vpn music
 modules-center = windowclass
 modules-right = weather intbattery memory cpu pulseaudio brightness powermenu date
 
@@ -69,7 +79,7 @@ enable-ipc = true
 [module/xworkspaces]
 type = internal/xworkspaces
 label-active = %name%
-label-active-background = ${colors.background-alt}
+label-active-background = ${colors.background-active}
 label-active-underline= ${colors.primary}
 label-active-padding = 1
 label-occupied = %name%
@@ -99,17 +109,7 @@ format-volume = <label-volume>
 label-volume = %percentage%%
 label-muted = muted
 label-muted-foreground = ${colors.disabled}
-
-
-[module/xkeyboard]
-type = internal/xkeyboard
-blacklist-0 = num lock
-label-layout = %name%
-label-layout-foreground = ${colors.primary}
-label-indicator-padding = 1
-label-indicator-margin = 1
-label-indicator-foreground = ${colors.background}
-label-indicator-background = ${colors.secondary}
+use-ui-max = false
 
 
 [module/memory]
@@ -135,13 +135,17 @@ interval = 5
 interface = wlp3s0
 format-connected = <label-connected>
 format-disconnected = <label-disconnected>
-label-disconnected = %{F#F0C674}%ifname%%{F#707880} disconnected
+label-disconnected = %ifname% disconnected
+label-disconnected-foreground = ${colors.disabled}
+label-connected = %{F#ebcb8b}%ifname%%{F-} %essid%
+label-connected-foreground = ${colors.foreground}
+
 
 [module/wlan]
 inherit = network-base
 interface-type = wireless
 accumulate-stats = true
-label-connected = %{F#F0C674}%ifname%%{F-} %essid%
+
 
 [module/eth]
 inherit = network-base
@@ -152,7 +156,10 @@ label-connected = %{F#F0C674}%ifname%%{F-} %local_ip%
 [module/vpn]
 type = custom/script
 exec = ~/.config/polybar/scripts/vpn
+exec-if = pgrep "vpn"
 interval = 5
+format-prefix = "VPN "
+format-prefix-foreground = ${colors.vpn}
 
 
 
@@ -175,6 +182,7 @@ interval = 60
 type = custom/script
 exec = ~/.config/polybar/scripts/wm_class
 interval = 1
+format-foreground = ${colors.windowclass}
 
 
 [module/brightness]
@@ -187,23 +195,26 @@ format-prefix-foreground = ${colors.primary}
 
 [module/intbattery]
 type = internal/battery
-full-at = 99
-low-at = 30
+full-at = 98
 battery = BAT0
 adapter = AC0
-format-discharging = %{F#F0C674}<ramp-capacity>%{F-} <label-discharging> 
-format-charging = <label-charging>
-label-full = Fully charged
-label-low = BATTERY LOW
-label-charging = %{F#F0C674}Charging%{F-} %percentage%%
+format-discharging = <ramp-capacity> <label-discharging>
 label-discharging = %percentage%%
-; Only applies if <ramp-capacity> is used
 ramp-capacity-0 = " "
 ramp-capacity-1 = " "
 ramp-capacity-2 = " "
 ramp-capacity-3 = " "
 ramp-capacity-4 = " "
+ramp-capacity-foreground = ${colors.primary}
+ramp-capacity-0-foreground = ${colors.alert}
+ramp-capacity-1-foreground = $colors.alert}
+ramp-capacity-4-foreground = $colors.spotify}
 
+format-charging = <label-charging>
+label-charging = Charging %percentage%%
+label-charging-foreground = ${colors.primary}
+label-full = Fully charged
+label-full-foreground = ${colors.spotify}
 
 
 [module/powermenu]
@@ -215,8 +226,13 @@ content-foreground = ${colors.primary}
 
 [module/music]
 type = custom/script
-exec = ~/.config/polybar/scripts/music
-
+exec = ~/.config/polybar/scripts/music_status 
+exec-if = pgrep -x "spotify"
+click-left = ~/.config/polybar/scripts/music_toggle
+click-right = ~/.config/polybar/scripts/music_next
+format-prefix = " "
+format-foreground = ${colors.spotify}
+label = %output:0:30:...%
 
 
 ;==================== Final settings ======================
