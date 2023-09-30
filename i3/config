@@ -11,7 +11,8 @@ set $mod Mod4
 font pango:MesloLGS NF 9
 
 # Background image
-exec --no-startup-id feh --autostart --bg-scale ~/.config/i3/wallpaper/jay-mantri-TFyi0QOx08c-unsplash.jpg
+#exec --no-startup-id feh --autostart --bg-scale ~/.config/i3/wallpaper/jay-mantri-TFyi0QOx08c-unsplash.jpg
+exec --no-startup-id feh --autostart --bg-fill ~/Pictures/2020s/2023/2023_LaPalma/DSC_0318.JPG
 
 # Start XDG autostart
 exec --no-startup-id dex --autostart --environment i3
