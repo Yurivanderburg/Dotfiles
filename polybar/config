@@ -233,7 +233,7 @@ click-right = ~/.config/polybar/scripts/music_next
 format-prefix = " "
 format-foreground = ${colors.spotify}
 label = %output:0:30:...%
-
+interval = 1
 
 ;==================== Final settings ======================
 

@@ -84,8 +84,8 @@ assign [class="dolphin"] $ws3
 for_window [class="dolphin"] focus
 
 # Okular
-assign [class="okular"] $ws3
-for_window [class="okular"] focus
+#assign [class="okular"] $ws3
+#for_window [class="okular"] focus
 
 
 ## -------------------- Window Behaviour --------------------
@@ -94,8 +94,8 @@ for_window [class="okular"] focus
 floating_modifier $mod
 
 # Make floating windows smaller than screen:
-floating_minimum_size 200x200
-floating_maximum_size 1000x1000
+floating_minimum_size 1500x500
+floating_maximum_size 2000x1500
 
 # Change focus with arrow keys
 bindsym $mod+Left focus left
@@ -185,7 +185,6 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i3?' -B 'Yes, exit i3' 'i3-msg exit'"
-
 
 ## -------------------- Resizing Windows --------------------
 
