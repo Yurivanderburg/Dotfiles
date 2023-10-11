@@ -11,14 +11,21 @@ set $mod Mod4
 font pango:MesloLGS NF 9
 
 # Background image
+
+# Image 1:
 #exec --no-startup-id feh --autostart --bg-scale ~/.config/i3/wallpaper/jay-mantri-TFyi0QOx08c-unsplash.jpg
+# Image 2:
 exec --no-startup-id feh --autostart --bg-fill ~/Pictures/2020s/2023/2023_LaPalma/DSC_0318.JPG
+# Image 3:
+#exec --no-startup-id feh --autostart -bg-fill ~/.config/i3/wallpaper/DSC_0596.jpg
+
 
 # Start XDG autostart
 exec --no-startup-id dex --autostart --environment i3
 
 # Lock screen
-bindsym $mod+l exec --no-startup-id i3lock -i ~/.config/i3/wallpaper/kace-rodriguez-p3OzJuT_Dks-unsplash_resized.png
+bindsym $mod+l exec --no-startup-id i3lock -i ~/.config/i3/wallpaper/DSC_0596.png 
+#~/.config/i3/wallpaper/kace-rodriguez-p3OzJuT_Dks-unsplash_resized.png
 
 # Start dunst on startup
 exec --no-startup-id dunst
@@ -94,8 +101,8 @@ for_window [class="dolphin"] focus
 floating_modifier $mod
 
 # Make floating windows smaller than screen:
-floating_minimum_size 1500x500
-floating_maximum_size 2000x1500
+floating_minimum_size 1500x1000
+floating_maximum_size 2250x1500
 
 # Change focus with arrow keys
 bindsym $mod+Left focus left

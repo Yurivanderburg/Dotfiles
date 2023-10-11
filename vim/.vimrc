@@ -61,10 +61,16 @@ call plug#begin()
     Plug 'nordtheme/vim'
 call plug#end()
 
-colorscheme nord
-
 
 " Fix un-readable comments:
 if (has("termguicolors"))
-    set termguicolors
+set termguicolors
 endif
+
+" Make customications
+let g:nord_italic = 1
+let g:nord_italic_comments = 1
+
+colorscheme nord
+
+
