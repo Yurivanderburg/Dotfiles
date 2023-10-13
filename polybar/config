@@ -60,7 +60,7 @@ separator-foreground = ${colors.separator}
 font-0 = "JetBrainsMono Nerd Font:pixelsize=8.5;4"
 
 ;Define Shell
-SHELL = $SHELL
+POLYBAR_SHELL = /usr/bin/zsh
 
 
 
@@ -226,13 +226,14 @@ content-foreground = ${colors.primary}
 
 [module/music]
 type = custom/script
-exec = ~/.config/polybar/scripts/music_status 
-#exec-if = pgrep -x "spotify"
-click-left = ~/.config/polybar/scripts/music_toggle
-click-right = ~/.config/polybar/scripts/music_next
-format-prefix = " "
+;exec = ~/.config/polybar/scripts/music_status 
+exec = spotifycli --status 
+;exec-if = pgrep -x "spotify"
+;click-left = ~/.config/polybar/scripts/music_toggle
+;click-right = ~/.config/polybar/scripts/music_next
+;format-prefix = " "
 format-foreground = ${colors.spotify}
-label = %output:0:30:...%
+;label = %output:0:30:...%
 interval = 5
 
 ;==================== Final settings ======================
