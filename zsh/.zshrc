@@ -26,7 +26,7 @@ plugins=(
     zsh-autosuggestions
     web-search
     dirhistory
-    history
+#    history
     virtualenv
     git
     fastfile
@@ -38,4 +38,6 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-
+# export PATH="/home/yuri/.local/bin/spotifycli:$PATH"
+export PATH="/home/yuri/.local/bin:$PATH"
+export PATH="/opt/pycharm-community-2023.2.2/bin:$PATH"
