@@ -109,7 +109,8 @@ format-volume = <label-volume>
 label-volume = %percentage%%
 label-muted = muted
 label-muted-foreground = ${colors.disabled}
-use-ui-max = false
+use-ui-max = true
+interval = 5
 
 
 [module/memory]
