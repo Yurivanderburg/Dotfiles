@@ -7,25 +7,16 @@
 set $mod Mod4
 
 # Font
-#font pango:JetBrainsMono Nerd Font 9
 font pango:MesloLGS NF 9
 
 # Background image
-
-# Image 1:
-#exec --no-startup-id feh --autostart --bg-scale ~/.config/i3/wallpaper/jay-mantri-TFyi0QOx08c-unsplash.jpg
-# Image 2:
 exec --no-startup-id feh --autostart --bg-fill ~/Pictures/2020s/2023/2023_LaPalma/DSC_0318.JPG
-# Image 3:
-#exec --no-startup-id feh --autostart -bg-fill ~/.config/i3/wallpaper/DSC_0596.jpg
-
 
 # Start XDG autostart
 exec --no-startup-id dex --autostart --environment i3
 
 # Lock screen
 bindsym $mod+l exec --no-startup-id i3lock -i ~/.config/i3/wallpaper/DSC_0596.png 
-#~/.config/i3/wallpaper/kace-rodriguez-p3OzJuT_Dks-unsplash_resized.png
 
 # Start dunst on startup
 exec --no-startup-id dunst
@@ -44,18 +35,21 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5% # +17
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%- # 17-
 
-# Borders
-gaps inner 6
-gaps outer 6
-
 # Kill focused window
 bindsym $mod+q kill
 
 # Start polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-# Set DPI
-#exec xrandr --dpi 192
+# reload the configuration file
+bindsym $mod+Shift+c reload
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i3?' -B 'Yes, exit i3' 'i3-msg exit'"
+
 
 
 ## -------------------- App settings --------------------
@@ -90,19 +84,31 @@ assign [class="(?i)pycharm-"] $ws4
 assign [class="dolphin"] $ws3
 for_window [class="dolphin"] focus
 
-# Okular
-#assign [class="okular"] $ws3
-#for_window [class="okular"] focus
 
-
-## -------------------- Window Behaviour --------------------
+## -------------------- Appearance -------------------------
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
+for_window [floating] move position center
+
+# Set border settings
+hide_edge_borders smart
+smart_gaps on
+
+# Borders
+gaps inner 6
+gaps outer 6
 
 # Make floating windows smaller than screen:
-floating_minimum_size 1500x1000
-floating_maximum_size 2250x1500
+floating_minimum_size 1000x750
+floating_maximum_size 1750x1250
+
+# Disable title bar
+for_window [all] border pixel 2
+
+
+
+## -------------------- App settings -------------------------
 
 # Change focus with arrow keys
 bindsym $mod+Left focus left
@@ -141,8 +147,11 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # Scratchpad
-bindsym $mod+Shift+n move scratchpad
-bindsym $mod+n scratchpad show
+# Make currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show scratchpad
+bindsym $mod+minus scratchpad show, resize set 1942 1200, move position center
 
 
 ## -------------------- Workspaces --------------------
@@ -183,15 +192,7 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
-# reload the configuration file
-bindsym $mod+Shift+c reload
 
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
-
-# exit i3 (logs you out of your X session)
-
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i3?' -B 'Yes, exit i3' 'i3-msg exit'"
 
 ## -------------------- Resizing Windows --------------------
 
@@ -221,21 +222,19 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-# Resize - but not resize mode
 
+# Resize - but not resize mode
 bindsym $mod+Ctrl+Right resize shrink width 1 px or 1 ppt
 bindsym $mod+Ctrl+Up resize grow height 1 px or 1 ppt
 bindsym $mod+Ctrl+Down resize shrink height 1 px or 1 ppt
 bindsym $mod+Ctrl+Left resize grow width 1 px or 1 ppt
 
 
-
-
-
 ## -------------------- Floating windows --------------------
 
 # Toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+space floating toggle, move position center
+
 
 # move floating windows with keys
 bindsym $mod+m mode "move" focus floating
@@ -261,13 +260,11 @@ mode "move" {
 ## -------------------- Colours --------------------
 
 # Window color settings: Nord theme
-# class                 border  backgr. text    indicator
-client.focused          #81a1c1 #81a1c1 #ffffff #81a1c1
-client.unfocused        #2e3440 #1f222d #888888 #1f222d
+# class                 border  backgr. text    indicator child_border
+client.focused          #900000 #81a1c1 #ffffff #81a1c1 #88c0d0
+client.unfocused        #2e3440 #1f222d #888888 #1f222d #5e81ac
 client.focused_inactive #2e3440 #1f222d #888888 #1f222d
 client.placeholder      #2e3440 #1f222d #888888 #1f222d
 client.urgent           #900000 #900000 #ffffff #900000
 client.background       #242424
-
-
 
