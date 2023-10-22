@@ -98,7 +98,6 @@ smart_gaps on
 # Borders
 gaps inner 6
 gaps outer 6
-
 # Make floating windows smaller than screen:
 floating_minimum_size 1000x750
 floating_maximum_size 1750x1250
