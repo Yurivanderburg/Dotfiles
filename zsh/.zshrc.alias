@@ -1,0 +1,5 @@
+# Alias in zsh
+#
+alias python=python3
+alias edit=vim
+alias c=clear

@@ -1,6 +1,7 @@
-"call plug#begin('~/.vim/plugged')
-
-" Example plugin
-"Plug 'tpope/vim-fugative'
-
-"call plug#end()
+call plug#begin('~/.vim/plugged')
+Plug 'arcticicestudio/nord-vim'
+Plug 'tpope/vim-fugitive'
+Plug 'preservim/nerdtree'
+Plug 'vimwiki/vimwiki'
+Plug 'ap/vim-css-color'
+call plug#end()

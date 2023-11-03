@@ -33,7 +33,7 @@ set incsearch     " BUT do highlight as you type you search phrase
 set fillchars=vert:\ ,stl:\ ,stlnc:\
 
 " configs statusline
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]\ %{FugitiveStatusline()}
 set laststatus=2    " always show the status line
 
 
@@ -43,8 +43,7 @@ if filereadable(expand("~/.vimrc.plug"))
 endif
 
 filetype plugin indent on
-
-source ~/.vim/syntastic.vimrc
+" source ~/.vim/syntastic.vimrc
 
 " Pyhton-Jedi configs
 
@@ -57,9 +56,9 @@ let g:jedi#use_splits_not_buffers='winwidth'
 
 
 " Plugin section:
-call plug#begin()
-    Plug 'nordtheme/vim'
-call plug#end()
+"call plug#begin()
+"    Plug 'nordtheme/vim'
+"call plug#end()
 
 
 " Fix un-readable comments:

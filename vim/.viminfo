@@ -11,30 +11,86 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/comment
+~MSle0~/resize
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1696715645,,"q"
 :wq
-|2,0,1696616999,,"wq"
+|2,0,1698998417,,"wq"
 :w
-|2,0,1696614174,,"w"
+|2,0,1698998313,,"w"
+:q!
+|2,0,1698652557,,"q!"
+:q
+|2,0,1698652555,,"q"
+:wq!
+|2,0,1698652553,,"wq!"
 :u
-|2,0,1696592417,,"u"
+|2,0,1697989705,,"u"
+:U
+|2,0,1697976352,,"U"
+:Sexplore border
+|2,0,1697811718,,"Sexplore border"
+:s border
+|2,0,1697811713,,"s border"
+:NERDTree
+|2,0,1697742676,,"NERDTree"
+:zq
+|2,0,1697742672,,"zq"
+:PlugInstall
+|2,0,1697742446,,"PlugInstall"
+:source %
+|2,0,1697742443,,"source %"
+:source
+|2,0,1697742367,,"source"
+:/ww
+|2,0,1697741986,,"/ww"
+:ww
+|2,0,1697741975,,"ww"
+:Vimwiki
+|2,0,1697741829,,"Vimwiki"
+:vimwiki
+|2,0,1697741802,,"vimwiki"
+:wiki
+|2,0,1697741800,,"wiki"
+:ZQ
+|2,0,1697741541,,"ZQ"
+:Sex
+|2,0,1697741489,,"Sex"
+:exit
+|2,0,1697741395,,"exit"
+:quit
+|2,0,1697741392,,"quit"
+:exir
+|2,0,1697741391,,"exir"
+:Explore
+|2,0,1697741386,,"Explore"
+:108
+|2,0,1697741325,,"108"
+:qè
+|2,0,1697741287,,"qè"
+:!
+|2,0,1697709711,,"!"
+:plugins§
+|2,0,1697207900,,"plugins§"
+:help vimwiki
+|2,0,1696977670,,"help vimwiki"
+:Git
+|2,0,1696977190,,"Git"
+:NerdTree
+|2,0,1696976992,,"NerdTree"
+:colorscheme nord
+|2,0,1696924809,,"colorscheme nord"
+:install nord
+|2,0,1696924805,,"install nord"
 :let g:nord_italic_comments = 1
 |2,0,1696592781,,"let g:nord_italic_comments = 1"
 :let g:nord_italic = 1
 |2,0,1696592766,,"let g:nord_italic = 1"
-:colorscheme nord
-|2,0,1696592705,,"colorscheme nord"
 :coloscheme nord
 |2,0,1696592701,,"coloscheme nord"
-:q!
-|2,0,1696588907,,"q!"
 :r
 |2,0,1696086318,,"r"
 :.,.+64w
@@ -49,20 +105,46 @@ $
 |2,0,1696075185,,"S"
 :search
 |2,0,1696075183,,"search"
-:U
-|2,0,1695370037,,"U"
 :z
 |2,0,1695326311,,"z"
 :Plugins
 |2,0,1695316736,,"Plugins"
 :find
 |2,0,1695300781,,"find"
-:PlugInstall
-|2,0,1695122066,,"PlugInstall"
 :plugins
 |2,0,1695121699,,"plugins"
 
 # Search String History (newest to oldest):
+?/resize
+|2,1,1697813492,47,"resize"
+?/mod+minus
+|2,1,1697813406,47,"mod+minus"
+?/mod+
+|2,1,1697813396,47,"mod+"
+?/scra
+|2,1,1697812759,47,"scra"
+?/scratch
+|2,1,1697812705,47,"scratch"
+?/border
+|2,1,1697812677,47,"border"
+? ww
+|2,1,1697741986,,"ww"
+?/ww
+|2,1,1697741979,47,"ww"
+? @$
+|2,1,1697741496,,"@$"
+?/resize 
+|2,1,1697736443,47,"resize "
+?/N_tele
+|2,1,1697631013,47,"N_tele"
+? \<N_tele\>
+|2,1,1697630516,,"\\<N_tele\\>"
+?/log
+|2,1,1697538719,47,"log"
+?/ground_truth
+|2,1,1697211896,47,"ground_truth"
+? \<exec\>
+|2,1,1696758782,,"\\<exec\\>"
 ?/pulse
 |2,1,1696715388,47,"pulse"
 ?/okular
@@ -91,12 +173,8 @@ $
 |2,1,1696075196,,"\\<The\\>"
 ? ;
 |2,1,1696075192,,";"
-? \<exec\>
-|2,1,1696075169,,"\\<exec\\>"
 ? \<source\>
 |2,1,1696074682,,"\\<source\\>"
-? @$
-|2,1,1696073360,,"@$"
 ? \<light_source\>
 |2,1,1695992009,,"\\<light_source\\>"
 ?/dpi
@@ -115,715 +193,801 @@ $
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
+@yes
+|2,3,1696977599,,"yes"
 
 # Debug Line History (newest to oldest):
 
 # Registers:
 "0	CHAR	0
 	
-	Sheet 01:
-	Sheet 02:
+	## -------------------- Appearance -------------------------
 	
-|3,0,0,0,4,0,1696611842,"","Sheet 01:","Sheet 02:",""
-"1	CHAR	0
-	d3_term, "", s:italicize_
-|3,0,1,0,1,0,1696591868,"d3_term, \"\", s:italicize_"
+	
+|3,0,0,0,4,0,1697812619,"","## -------------------- Appearance -------------------------","",""
+""1	CHAR	0
+	# Create alias for python3:
+	#alias python=python3
+	#alias edit=vim
+	#alias c=clear
+	
+	
+	
+|3,1,1,0,7,0,1698436880,"# Create alias for python3:","#alias python=python3","#alias edit=vim","#alias c=clear","","",""
 "2	CHAR	0
-	workspace_layout $ws2 stacking
+	alias aa="apt update"
+	alias au="apt upgrade"
 	
 	
-|3,0,2,0,3,0,1696588921,"workspace_layout $ws2 stacking","",""
+|3,0,2,0,4,0,1698436580,"alias aa=\"apt update\"","alias au=\"apt upgrade\"","",""
 "3	CHAR	0
-	
-	#################################
-	#
-	# Blur
-	#
-	#################################
-	#################################
-	#     Background-Blurring       #
-	#################################
+	7
 	
 	
-	# Parameters for background blurring, see the *BLUR* section for more information.
-	# blur-method = "dual_kawase"
-	# blur-size = 12
-	#
-	# blur-deviation = false
+	blur-background = true
+	blur-method = "dual_kawase"
+	blur-strength = 5
+	blur-kern = "3x3box";
 	
-	# Blur background of semi-transparent / ARGB windows. 
-	#
-	# blur-background = true;
-	
-	# Blur background of windows when the window frame is not opaque. 
-	# Implies:
-	#    blur-background 
-	# Bad in performance, with driver-dependent behavior. The name may change.
-	#
-	# blur-background-frame = false;
-	
-	
-	# Use fixed blur strength rather than adjusting according to window opacity.
-	# blur-background-fixed = false;
-	
-	
-	# Specify the blur convolution kernel, with the following format:
-	# example:
-	#   blur-kern = "5,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1";
-	#
-	# blur-kern = ''
-	# blur-kern = "3x3box";
-	animations=true;
-	blur: {
-	  # requires: https://github.com/ibhagwan/picom
-	  #method = "dual_kawase";
-	  method = "kernel";
-	  strength = 10;
-	  deviation = 5.0;
-	  kernel = "11x11gaussian";
-	  background = true;
-	  background-frame = false;
-	  background-fixed = false;
-|3,0,3,0,50,0,1696587666,"","#################################","#","# Blur","#","#################################","#################################","#     Background-Blurring       #","#################################","","","# Parameters for background blurring, see the *BLUR* section for more information.","# blur-method = \"dual_kawase\"","# blur-size = 12","#","# blur-deviation = false","","# Blur background of semi-transparent / ARGB windows. ","#",>27
-|<"# blur-background = true;","","# Blur background of windows when the window frame is not opaque. ","# Implies:","#    blur-background ","# Bad in performance, with driver-dependent behavior. The name may change.","#","# blur-background-frame = false;","","","# Use fixed blur strength rather than adjusting according to window opacity.","# blur-background-fixed = false;","","","# Specify the blur convolution kernel, with the following format:","# example:",>74
-|<"#   blur-kern = \"5,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\";","#","# blur-kern = ''","# blur-kern = \"3x3box\";","animations=true;","blur: {","  # requires: https://github.com/ibhagwan/picom","  #method = \"dual_kawase\";","  method = \"kernel\";","  strength = 10;","  deviation = 5.0;","  kernel = \"11x11gaussian\";","  background = true;","  background-frame = false;","  background-fixed = false;"
+|3,0,3,0,8,0,1697814205,"7","","","blur-background = true","blur-method = \"dual_kawase\"","blur-strength = 5","blur-kern = \"3x3box\";",""
 "4	CHAR	0
-	#fade-out-step = 1;
-	fade-delta= 5;
 	
 	
-|3,0,4,0,4,0,1696587581,"#fade-out-step = 1;","fade-delta= 5;","",""
-"5	CHAR	0
-	
-	def get_ip():
-	
-	    ip_request = requests.get('https://ipinfo.io/ip')
-	    ip_adress = ip_request.text
-	    
-	    location_request = requests.get(f'https://ipinfo.io/{ip_adress}')
-	    city = location_request.json()['city']
-	
-	    return ip_adress
-	  
-|3,0,5,0,11,0,1696092739,"","def get_ip():","","    ip_request = requests.get('https://ipinfo.io/ip')","    ip_adress = ip_request.text","    ","    location_request = requests.get(f'https://ipinfo.io/{ip_adress}')","    city = location_request.json()['city']","","    return ip_adress","  "
-"6	CHAR	0
+	blur-background = true
+	blur-method = "dual_kawase"
+	blur-strength = 5
+	blur-kern = "3x3box";
 	v
-	    location_request = requests.get(f'https://ipinfo.io/{ip_adress}')
-	    city = location_request.json()['city']
+|3,0,4,0,7,0,1697813874,"","","blur-background = true","blur-method = \"dual_kawase\"","blur-strength = 5","blur-kern = \"3x3box\";","v"
+"5	LINE	0
+	
+|3,0,5,1,1,0,1697813677,""
+"6	CHAR	0
 	
 	
-|3,0,6,0,5,0,1696092683,"v","    location_request = requests.get(f'https://ipinfo.io/{ip_adress}')","    city = location_request.json()['city']","",""
+	## -------------------- Window behaviour --------------------
+	
+|3,0,6,0,4,0,1697812683,"","","## -------------------- Window behaviour --------------------",""
 "7	CHAR	0
-	 
-	city = get_location()
+	for_window [all] border pixel 2
 	
 	
-|3,0,7,0,4,0,1696092403," ","city = get_location()","",""
+|3,0,7,0,3,0,1697812659,"for_window [all] border pixel 2","",""
 "8	CHAR	0
+	# Set DPI
+	#exec xrandr --dpi 192
 	
-	city = get_location()
 	
-	
-|3,0,8,0,4,0,1696092397,"","city = get_location()","",""
+|3,0,8,0,4,0,1697812580,"# Set DPI","#exec xrandr --dpi 192","",""
 "9	CHAR	0
-	 
-	    ip_request = requests.get('https://ipinfo.io/ip')
-	    ip_adress = ip_request.text
 	
-	    location_request = requests.get(f'https://ipinfo.io/{ip_adress}')
-	    location_json = location_request.json()
+	# reload the configuration file
+	bindsym $mod+Shift+c reload
 	
-	    return location_json['city']
+	# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+	bindsym $mod+Shift+r restart
+	
+	# exit i3 (logs you out of your X session)
+	bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i3?' -B 'Yes, exit i3' 'i3-msg exit'"
 	
 	
-|3,0,9,0,10,0,1696092169," ","    ip_request = requests.get('https://ipinfo.io/ip')","    ip_adress = ip_request.text","","    location_request = requests.get(f'https://ipinfo.io/{ip_adress}')","    location_json = location_request.json()","","    return location_json['city']","",""
-""-	CHAR	0
-	§
-|3,1,36,0,1,0,1696615883,"§"
+|3,0,9,0,11,0,1697812570,"","# reload the configuration file","bindsym $mod+Shift+c reload","","# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)","bindsym $mod+Shift+r restart","","# exit i3 (logs you out of your X session)","bindsym $mod+Shift+e exec \"i3-nagbar -t warning -m 'Do you really want to exit i3?' -B 'Yes, exit i3' 'i3-msg exit'\"","",""
+"-	CHAR	0
+	ivpotifycli --status
+|3,0,36,0,1,0,1697972455,"ivpotifycli --status"
 
 # File marks:
-'0  83  0  ~/.config/polybar/config
-|4,48,83,0,1696715645,"~/.config/polybar/config"
-'1  8  30  ~/Documents/Uni/Master/Semester3/Internship/.gitignore
-|4,49,8,30,1696616999,"~/Documents/Uni/Master/Semester3/Internship/.gitignore"
-'2  13  0  ~/Documents/Uni/Master/Semester3/Internship/.gitignore
-|4,50,13,0,1696616719,"~/Documents/Uni/Master/Semester3/Internship/.gitignore"
-'3  12  0  ~/Documents/Uni/Master/Semester3/Internship/.gitignore
-|4,51,12,0,1696616719,"~/Documents/Uni/Master/Semester3/Internship/.gitignore"
-'4  5  94  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report
-|4,52,5,94,1696615885,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report"
-'5  1  0  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q
-|4,53,1,0,1696615768,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q"
-'6  88  0  ~/.config/i3/config
-|4,54,88,0,1696614180,"~/.config/i3/config"
-'7  4  0  ~/Documents/Uni/Master/Semester3/General_Relativity/Exercises/Testat.txt
-|4,55,4,0,1696611886,"~/Documents/Uni/Master/Semester3/General_Relativity/Exercises/Testat.txt"
-'8  567  13  ~/.vim/plugged/vim/colors/nord.vim
-|4,56,567,13,1696593244,"~/.vim/plugged/vim/colors/nord.vim"
-'9  15  24  ~/.config/alacritty/alacritty.yml
-|4,57,15,24,1696593242,"~/.config/alacritty/alacritty.yml"
+'0  49  0  ~/Documents/Leisure/ClashofClans/2023_11_CWL/Aufstellungen.txt
+|4,48,49,0,1698998417,"~/Documents/Leisure/ClashofClans/2023_11_CWL/Aufstellungen.txt"
+'1  27  16  ~/Documents/Leisure/ClashofClans/2023_11_CWL/Aufstellungen.txt
+|4,49,27,16,1698940891,"~/Documents/Leisure/ClashofClans/2023_11_CWL/Aufstellungen.txt"
+'2  27  16  ~/Documents/Leisure/ClashofClans/2023_11_CWL/Aufstellungen.txt
+|4,50,27,16,1698940891,"~/Documents/Leisure/ClashofClans/2023_11_CWL/Aufstellungen.txt"
+'3  141  49  ~/.config/polybar/config
+|4,51,141,49,1698868600,"~/.config/polybar/config"
+'4  141  49  ~/.config/polybar/config
+|4,52,141,49,1698868600,"~/.config/polybar/config"
+'5  142  0  ~/.config/polybar/config
+|4,53,142,0,1698868097,"~/.config/polybar/config"
+'6  142  0  ~/.config/polybar/config
+|4,54,142,0,1698868097,"~/.config/polybar/config"
+'7  142  0  ~/.config/polybar/config
+|4,55,142,0,1698868097,"~/.config/polybar/config"
+'8  142  0  ~/.config/polybar/config
+|4,56,142,0,1698868097,"~/.config/polybar/config"
+'9  144  0  ~/.config/polybar/config
+|4,57,144,0,1698867972,"~/.config/polybar/config"
 
 # Jumplist (newest first):
--'  83  0  ~/.config/polybar/config
-|4,39,83,0,1696715645,"~/.config/polybar/config"
+-'  49  0  ~/Documents/Leisure/ClashofClans/2023_11_CWL/Aufstellungen.txt
+|4,39,49,0,1698998417,"~/Documents/Leisure/ClashofClans/2023_11_CWL/Aufstellungen.txt"
+-'  1  0  ~/Documents/Leisure/ClashofClans/2023_11_CWL/Aufstellungen.txt
+|4,39,1,0,1698998219,"~/Documents/Leisure/ClashofClans/2023_11_CWL/Aufstellungen.txt"
+-'  27  16  ~/Documents/Leisure/ClashofClans/2023_11_CWL/Aufstellungen.txt
+|4,39,27,16,1698940891,"~/Documents/Leisure/ClashofClans/2023_11_CWL/Aufstellungen.txt"
+-'  27  16  ~/Documents/Leisure/ClashofClans/2023_11_CWL/Aufstellungen.txt
+|4,39,27,16,1698940891,"~/Documents/Leisure/ClashofClans/2023_11_CWL/Aufstellungen.txt"
+-'  1  0  ~/Documents/Leisure/ClashofClans/2023_11_CWL/Aufstellungen.txt
+|4,39,1,0,1698940447,"~/Documents/Leisure/ClashofClans/2023_11_CWL/Aufstellungen.txt"
+-'  141  49  ~/.config/polybar/config
+|4,39,141,49,1698868600,"~/.config/polybar/config"
+-'  141  49  ~/.config/polybar/config
+|4,39,141,49,1698868600,"~/.config/polybar/config"
+-'  141  49  ~/.config/polybar/config
+|4,39,141,49,1698868600,"~/.config/polybar/config"
 -'  1  0  ~/.config/polybar/config
-|4,39,1,0,1696715376,"~/.config/polybar/config"
--'  8  30  ~/Documents/Uni/Master/Semester3/Internship/.gitignore
-|4,39,8,30,1696616999,"~/Documents/Uni/Master/Semester3/Internship/.gitignore"
--'  8  30  ~/Documents/Uni/Master/Semester3/Internship/.gitignore
-|4,39,8,30,1696616999,"~/Documents/Uni/Master/Semester3/Internship/.gitignore"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/.gitignore
-|4,39,1,0,1696616985,"~/Documents/Uni/Master/Semester3/Internship/.gitignore"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/.gitignore
-|4,39,1,0,1696616985,"~/Documents/Uni/Master/Semester3/Internship/.gitignore"
--'  13  0  ~/Documents/Uni/Master/Semester3/Internship/.gitignore
-|4,39,13,0,1696616719,"~/Documents/Uni/Master/Semester3/Internship/.gitignore"
--'  12  0  ~/Documents/Uni/Master/Semester3/Internship/.gitignore
-|4,39,12,0,1696616719,"~/Documents/Uni/Master/Semester3/Internship/.gitignore"
--'  13  0  ~/Documents/Uni/Master/Semester3/Internship/.gitignore
-|4,39,13,0,1696616719,"~/Documents/Uni/Master/Semester3/Internship/.gitignore"
--'  12  0  ~/Documents/Uni/Master/Semester3/Internship/.gitignore
-|4,39,12,0,1696616719,"~/Documents/Uni/Master/Semester3/Internship/.gitignore"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/.gitignore
-|4,39,1,0,1696616716,"~/Documents/Uni/Master/Semester3/Internship/.gitignore"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/.gitignore
-|4,39,1,0,1696616716,"~/Documents/Uni/Master/Semester3/Internship/.gitignore"
--'  5  94  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report
-|4,39,5,94,1696615885,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report"
--'  5  94  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report
-|4,39,5,94,1696615885,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report"
--'  5  94  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report
-|4,39,5,94,1696615885,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report"
--'  5  94  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report
-|4,39,5,94,1696615885,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report"
--'  5  94  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report
-|4,39,5,94,1696615885,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report"
--'  5  94  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report
-|4,39,5,94,1696615885,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report"
--'  5  94  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report
-|4,39,5,94,1696615885,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report"
--'  5  94  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report
-|4,39,5,94,1696615885,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report
-|4,39,1,0,1696615769,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report
-|4,39,1,0,1696615769,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report
-|4,39,1,0,1696615769,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report
-|4,39,1,0,1696615769,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report
-|4,39,1,0,1696615769,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report
-|4,39,1,0,1696615769,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report
-|4,39,1,0,1696615769,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report
-|4,39,1,0,1696615769,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q
-|4,39,1,0,1696615768,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q
-|4,39,1,0,1696615768,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q
-|4,39,1,0,1696615768,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q
-|4,39,1,0,1696615768,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q
-|4,39,1,0,1696615768,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q
-|4,39,1,0,1696615768,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q
-|4,39,1,0,1696615768,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q
-|4,39,1,0,1696615768,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q
-|4,39,1,0,1696615768,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q
-|4,39,1,0,1696615768,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q
-|4,39,1,0,1696615768,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q
-|4,39,1,0,1696615768,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q
-|4,39,1,0,1696615768,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q
-|4,39,1,0,1696615768,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q
-|4,39,1,0,1696615768,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q"
--'  1  0  ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q
-|4,39,1,0,1696615768,"~/Documents/Uni/Master/Semester3/Internship/Documentation/Q"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  88  0  ~/.config/i3/config
-|4,39,88,0,1696614180,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1696614162,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1696614162,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1696614162,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1696614162,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1696614162,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1696614162,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1696614162,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1696614162,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1696614162,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1696614162,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1696614162,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1696614162,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1696614162,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1696614162,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1696614162,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1696614162,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1696614162,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1696614162,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1696614162,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1696614162,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1696614162,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1696614162,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1696614162,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1696614162,"~/.config/i3/config"
+|4,39,1,0,1698868525,"~/.config/polybar/config"
+-'  1  0  ~/.config/polybar/config
+|4,39,1,0,1698868525,"~/.config/polybar/config"
+-'  1  0  ~/.config/polybar/config
+|4,39,1,0,1698868525,"~/.config/polybar/config"
+-'  142  0  ~/.config/polybar/config
+|4,39,142,0,1698868097,"~/.config/polybar/config"
+-'  142  0  ~/.config/polybar/config
+|4,39,142,0,1698868097,"~/.config/polybar/config"
+-'  142  0  ~/.config/polybar/config
+|4,39,142,0,1698868097,"~/.config/polybar/config"
+-'  142  0  ~/.config/polybar/config
+|4,39,142,0,1698868097,"~/.config/polybar/config"
+-'  142  0  ~/.config/polybar/config
+|4,39,142,0,1698868097,"~/.config/polybar/config"
+-'  1  0  ~/.config/polybar/config
+|4,39,1,0,1698868086,"~/.config/polybar/config"
+-'  1  0  ~/.config/polybar/config
+|4,39,1,0,1698868086,"~/.config/polybar/config"
+-'  144  0  ~/.config/polybar/config
+|4,39,144,0,1698867972,"~/.config/polybar/config"
+-'  144  0  ~/.config/polybar/config
+|4,39,144,0,1698867972,"~/.config/polybar/config"
+-'  144  0  ~/.config/polybar/config
+|4,39,144,0,1698867972,"~/.config/polybar/config"
+-'  144  0  ~/.config/polybar/config
+|4,39,144,0,1698867972,"~/.config/polybar/config"
+-'  144  0  ~/.config/polybar/config
+|4,39,144,0,1698867972,"~/.config/polybar/config"
+-'  144  0  ~/.config/polybar/config
+|4,39,144,0,1698867972,"~/.config/polybar/config"
+-'  144  0  ~/.config/polybar/config
+|4,39,144,0,1698867972,"~/.config/polybar/config"
+-'  1  0  ~/.config/polybar/config
+|4,39,1,0,1698867900,"~/.config/polybar/config"
+-'  1  0  ~/.config/polybar/config
+|4,39,1,0,1698867900,"~/.config/polybar/config"
+-'  141  63  ~/.config/polybar/config
+|4,39,141,63,1698867855,"~/.config/polybar/config"
+-'  141  63  ~/.config/polybar/config
+|4,39,141,63,1698867855,"~/.config/polybar/config"
+-'  141  63  ~/.config/polybar/config
+|4,39,141,63,1698867855,"~/.config/polybar/config"
+-'  141  63  ~/.config/polybar/config
+|4,39,141,63,1698867855,"~/.config/polybar/config"
+-'  141  63  ~/.config/polybar/config
+|4,39,141,63,1698867855,"~/.config/polybar/config"
+-'  141  63  ~/.config/polybar/config
+|4,39,141,63,1698867855,"~/.config/polybar/config"
+-'  1  0  ~/.config/polybar/config
+|4,39,1,0,1698867831,"~/.config/polybar/config"
+-'  1  0  ~/.config/polybar/config
+|4,39,1,0,1698867831,"~/.config/polybar/config"
+-'  141  49  ~/.config/polybar/config
+|4,39,141,49,1698867805,"~/.config/polybar/config"
+-'  141  49  ~/.config/polybar/config
+|4,39,141,49,1698867805,"~/.config/polybar/config"
+-'  1  0  ~/.config/polybar/config
+|4,39,1,0,1698867802,"~/.config/polybar/config"
+-'  1  0  ~/.config/polybar/config
+|4,39,1,0,1698867802,"~/.config/polybar/config"
+-'  1  0  ~/.config/polybar/config
+|4,39,1,0,1698867763,"~/.config/polybar/config"
+-'  1  0  ~/.config/polybar/config
+|4,39,1,0,1698867763,"~/.config/polybar/config"
+-'  185  9  ~/.config/polybar/config
+|4,39,185,9,1698763193,"~/.config/polybar/config"
+-'  185  9  ~/.config/polybar/config
+|4,39,185,9,1698763193,"~/.config/polybar/config"
+-'  185  9  ~/.config/polybar/config
+|4,39,185,9,1698763193,"~/.config/polybar/config"
+-'  185  9  ~/.config/polybar/config
+|4,39,185,9,1698763193,"~/.config/polybar/config"
+-'  185  9  ~/.config/polybar/config
+|4,39,185,9,1698763193,"~/.config/polybar/config"
+-'  185  9  ~/.config/polybar/config
+|4,39,185,9,1698763193,"~/.config/polybar/config"
+-'  185  9  ~/.config/polybar/config
+|4,39,185,9,1698763193,"~/.config/polybar/config"
+-'  185  9  ~/.config/polybar/config
+|4,39,185,9,1698763193,"~/.config/polybar/config"
+-'  185  9  ~/.config/polybar/config
+|4,39,185,9,1698763193,"~/.config/polybar/config"
+-'  185  9  ~/.config/polybar/config
+|4,39,185,9,1698763193,"~/.config/polybar/config"
+-'  185  9  ~/.config/polybar/config
+|4,39,185,9,1698763193,"~/.config/polybar/config"
+-'  185  9  ~/.config/polybar/config
+|4,39,185,9,1698763193,"~/.config/polybar/config"
+-'  185  9  ~/.config/polybar/config
+|4,39,185,9,1698763193,"~/.config/polybar/config"
+-'  185  9  ~/.config/polybar/config
+|4,39,185,9,1698763193,"~/.config/polybar/config"
+-'  185  9  ~/.config/polybar/config
+|4,39,185,9,1698763193,"~/.config/polybar/config"
+-'  1  0  ~/.config/polybar/config
+|4,39,1,0,1698763139,"~/.config/polybar/config"
+-'  1  0  ~/.config/polybar/config
+|4,39,1,0,1698763139,"~/.config/polybar/config"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
+-'  1  0  ~/vimwiki/Catching up .wiki
+|4,39,1,0,1698749927,"~/vimwiki/Catching up .wiki"
 
 # History of marks within files (newest to oldest):
 
+> ~/Documents/Leisure/ClashofClans/2023_11_CWL/Aufstellungen.txt
+	*	1698998417	0
+	"	49	0
+	^	21	52
+	.	21	52
+	+	13	1
+	+	5	4
+	+	13	9
+	+	25	5
+	+	1	8
+	+	5	5
+	+	25	6
+	+	46	14
+	+	47	0
+	+	48	0
+	+	4	44
+	+	5	7
+	+	6	15
+	+	4	15
+	+	5	16
+	+	6	16
+	+	5	16
+	+	7	16
+	+	8	16
+	+	9	16
+	+	10	16
+	+	12	7
+	+	11	16
+	+	12	16
+	+	13	16
+	+	14	16
+	+	15	16
+	+	16	16
+	+	17	16
+	+	18	16
+	+	19	16
+	+	20	16
+	+	21	16
+	+	22	16
+	+	23	16
+	+	26	16
+	+	27	16
+	+	28	16
+	+	29	16
+	+	30	16
+	+	34	16
+	+	35	16
+	+	36	16
+	+	37	16
+	+	38	17
+	+	39	16
+	+	40	16
+	+	4	53
+	+	6	46
+	+	4	30
+	+	6	51
+	+	4	51
+	+	6	31
+	+	7	28
+	+	6	31
+	+	4	31
+	+	6	32
+	+	8	32
+	+	9	32
+	+	10	32
+	+	12	32
+	+	13	32
+	+	15	32
+	+	16	32
+	+	18	32
+	+	20	32
+	+	21	32
+	+	22	32
+	+	23	32
+	+	26	32
+	+	28	32
+	+	6	52
+	+	4	52
+	+	15	57
+	+	21	57
+	+	22	57
+	+	8	60
+	+	21	52
+
 > ~/.config/polybar/config
-	*	1696715587	0
-	"	83	0
-	^	236	12
-	.	236	11
-	+	34	0
-	+	185	40
-	+	30	20
-	+	30	21
-	+	140	43
-	+	140	23
-	+	137	40
-	+	139	0
-	+	148	0
-	+	136	0
-	+	140	0
-	+	148	34
-	+	148	44
-	+	148	0
-	+	136	0
-	+	148	0
-	+	148	22
-	+	148	48
-	+	148	0
-	+	137	0
-	+	139	0
+	*	1698868599	0
+	"	141	49
+	^	141	50
+	.	141	50
 	+	145	0
-	+	143	0
-	+	137	40
-	+	139	0
-	+	138	15
-	+	189	0
-	+	233	16
-	+	233	8
-	+	233	22
-	+	233	20
-	+	235	0
-	+	234	20
-	+	31	16
-	+	32	13
-	+	221	0
-	+	166	0
-	+	161	19
-	+	162	32
-	+	161	21
-	+	162	13
-	+	140	0
-	+	150	0
-	+	148	0
-	+	144	0
-	+	235	20
-	+	163	0
-	+	159	21
-	+	160	0
-	+	158	36
-	+	230	27
-	+	235	20
-	+	198	23
-	+	200	13
-	+	213	0
-	+	201	0
-	+	216	26
-	+	201	0
-	+	213	0
-	+	201	0
-	+	216	26
-	+	203	0
-	+	216	26
-	+	220	0
-	+	213	0
-	+	216	26
+	+	236	20
+	+	164	0
+	+	160	21
+	+	161	0
+	+	159	36
+	+	231	27
+	+	236	20
+	+	199	23
+	+	201	13
 	+	214	0
-	+	216	1
-	+	220	0
-	+	216	26
-	+	201	0
-	+	214	0
-	+	216	26
-	+	198	22
-	+	201	31
-	+	216	26
-	+	216	49
-	+	216	26
-	+	203	67
-	+	206	67
-	+	201	0
-	+	201	55
-	+	206	38
-	+	203	28
-	+	207	0
-	+	199	0
-	+	203	38
-	+	203	24
-	+	207	24
-	+	217	40
-	+	212	0
-	+	209	43
-	+	210	42
-	+	204	0
 	+	202	0
-	+	218	0
-	+	214	39
-	+	215	44
-	+	198	12
-	+	236	11
+	+	217	26
+	+	202	0
+	+	214	0
+	+	202	0
+	+	217	26
+	+	204	0
+	+	217	26
+	+	221	0
+	+	214	0
+	+	217	26
+	+	215	0
+	+	217	1
+	+	221	0
+	+	217	26
+	+	202	0
+	+	215	0
+	+	217	26
+	+	199	22
+	+	202	31
+	+	217	26
+	+	217	49
+	+	217	26
+	+	204	67
+	+	207	67
+	+	202	0
+	+	202	55
+	+	207	38
+	+	204	28
+	+	208	0
+	+	200	0
+	+	204	38
+	+	204	24
+	+	208	24
+	+	218	40
+	+	213	0
+	+	210	43
+	+	211	42
+	+	205	0
+	+	203	0
+	+	219	0
+	+	215	39
+	+	216	44
+	+	199	12
+	+	237	11
+	+	69	36
+	+	231	1
+	+	232	0
+	+	233	0
+	+	63	14
+	+	236	0
+	+	230	0
+	+	231	25
+	+	63	14
+	+	63	28
+	+	230	0
+	+	231	0
+	+	230	0
+	+	234	0
+	+	230	0
+	+	231	0
+	+	230	0
+	+	231	24
+	+	69	36
+	+	231	26
+	+	69	36
+	+	114	0
+	+	112	17
+	+	113	0
+	+	113	11
+	+	69	36
+	+	231	0
+	+	230	0
+	+	231	0
+	+	232	0
+	+	231	0
+	+	232	49
+	+	233	44
+	+	234	0
+	+	235	0
+	+	236	0
+	+	237	11
+	+	236	19
+	+	130	18
+	+	185	12
+	+	141	63
+	+	141	100
+	+	143	0
+	+	141	50
 
-> ~/Documents/Uni/Master/Semester3/Internship/.gitignore
-	*	1696616999	0
-	"	8	30
-	^	8	31
-	.	8	30
-	+	3	0
-	+	7	0
-	+	8	0
-	+	10	22
-	+	11	20
-	+	12	4
-	+	13	5
-	+	8	30
-
-> ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report
-	*	1696615883	0
-	"	5	94
-	^	5	97
-	.	5	95
-	+	1	84
-	+	5	95
-
-> ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q
-	*	1696615766	0
+> ~/vimwiki/Catching up .wiki
+	*	1698749927	0
 	"	1	0
+	^	1	0
+	.	2	0
+	+	1	103
+	+	1	104
+	+	1	0
+	+	1	7
+	+	1	32
+	+	1	65
+	+	1	102
+	+	1	104
+	+	1	7
+	+	1	0
+	+	1	104
+	+	1	103
+	+	1	114
+	+	1	34
+	+	1	114
+	+	2	7
+	+	3	16
+	+	4	6
+	+	1	0
+	+	4	6
+	+	1	113
+	+	1	75
+	+	4	67
+	+	5	6
+	+	3	15
+	+	6	0
+	+	7	0
+	+	2	0
+
+> ~/vimwiki/index.wiki
+	*	1698749891	0
+	"	3	2
+	^	4	0
+	.	3	0
+	+	2	3
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	3	32
+	+	4	0
+	+	3	0
+
+> ~/.config/polybar/scripts/cpu
+	*	1698672042	0
+	"	5	21
+	^	5	22
+	.	5	21
+	+	3	0
+	+	4	44
+	+	5	10
+	+	4	54
+	+	5	5
+	+	4	45
+	+	5	21
+
+> /etc/apt/sources.list.d/sur5r-i3.list
+	*	1698652553	0
+	"	1	16
+	^	1	17
+	.	1	16
+	+	1	16
+
+> /etc/apt/sources.list
+	*	1698652507	0
+	"	4	0
+	^	4	0
+	.	5	0
+	+	5	0
+
+> ~/.zshrc
+	*	1698437091	0
+	"	43	24
+	^	43	25
+	.	43	24
+	+	39	1
+	+	39	0
+	+	40	0
+	+	7	0
+	+	9	0
+	+	7	0
+	+	19	0
+	+	20	0
+	+	23	0
+	+	24	0
+	+	23	9
+	+	39	0
+	+	37	19
+	+	40	0
+	+	40	8
+	+	7	7
+	+	50	0
+	+	7	0
+	+	50	1
+	+	50	0
+	+	40	22
+	+	29	0
+	+	51	53
+	+	50	11
+	+	50	0
+	+	51	0
+	+	49	1
+	+	49	27
+	+	49	19
+	+	49	14
+	+	49	12
+	+	49	19
+	+	49	21
+	+	49	0
+	+	21	0
+	+	20	1
+	+	49	0
+	+	50	0
+	+	49	0
+	+	50	0
+	+	41	12
+	+	46	2
+	+	42	0
+	+	43	0
+	+	42	22
+	+	44	0
+	+	43	24
+
+> ~/.zshrc.alias
+	*	1698436814	0
+	"	5	12
+	^	5	13
+	.	5	12
+	+	5	12
 
 > ~/.config/i3/config
-	*	1696614174	0
-	"	88	0
-	^	88	1
-	.	88	0
-	+	4	0
+	*	1698414972	0
+	"	19	44
+	^	99	12
+	.	19	86
+	+	35	0
+	+	29	89
+	+	30	89
+	+	269	53
+	+	226	29
+	+	223	1
+	+	269	0
+	+	269	32
+	+	269	12
+	+	269	0
+	+	92	0
+	+	96	0
+	+	94	20
+	+	159	0
+	+	156	55
+	+	170	0
+	+	156	55
+	+	158	1
+	+	158	0
+	+	165	29
+	+	165	42
+	+	165	0
+	+	97	0
+	+	102	0
+	+	97	0
+	+	269	0
+	+	231	0
+	+	231	38
+	+	231	1
+	+	102	30
+	+	103	30
+	+	270	0
+	+	231	41
+	+	231	5
+	+	231	29
+	+	231	0
+	+	231	31
+	+	263	30
+	+	262	69
+	+	263	62
+	+	264	62
+	+	263	62
+	+	264	62
+	+	263	63
+	+	264	43
+	+	13	0
+	+	14	0
+	+	13	0
+	+	15	0
+	+	1	33
 	+	2	0
-	+	3	0
-	+	9	0
-	+	11	46
-	+	15	0
-	+	18	0
-	+	15	0
-	+	10	0
-	+	11	1
-	+	10	0
-	+	11	0
 	+	10	0
 	+	20	0
-	+	22	0
-	+	21	0
-	+	22	0
-	+	24	0
-	+	22	0
-	+	29	0
-	+	30	0
-	+	92	0
+	+	39	0
+	+	37	0
+	+	90	1
 	+	90	0
-	+	83	29
-	+	85	0
-	+	83	16
-	+	84	33
-	+	90	0
-	+	82	9
-	+	88	33
-	+	94	0
-	+	95	0
-	+	266	0
-	+	244	0
-	+	100	29
-	+	101	0
-	+	105	0
-	+	112	0
-	+	133	3
-	+	129	2
-	+	125	2
-	+	122	9
-	+	119	3
-	+	116	2
-	+	136	3
-	+	187	115
-	+	187	26
-	+	191	0
-	+	190	0
-	+	199	38
-	+	200	37
-	+	201	39
-	+	202	45
-	+	199	47
-	+	200	46
-	+	201	48
-	+	202	54
-	+	199	41
-	+	200	39
-	+	201	40
-	+	202	47
-	+	217	0
-	+	244	0
-	+	217	0
-	+	215	0
-	+	222	0
-	+	217	40
-	+	129	0
-	+	131	0
-	+	129	0
-	+	218	0
-	+	223	0
-	+	242	0
-	+	243	0
-	+	244	0
-	+	245	34
-	+	253	0
-	+	50	5
-	+	50	9
-	+	51	0
-	+	51	21
-	+	53	0
-	+	51	0
-	+	11	27
-	+	11	25
-	+	12	0
-	+	11	23
-	+	15	0
-	+	14	0
-	+	15	94
-	+	149	12
-	+	189	0
-	+	190	0
-	+	97	23
-	+	98	22
-	+	97	28
-	+	98	29
-	+	159	28
-	+	87	0
+	+	100	13
+	+	97	0
+	+	98	0
+	+	88	38
 	+	88	0
-	i	94	18
+	+	101	0
+	+	193	0
+	+	197	0
+	+	44	0
+	+	45	0
+	+	88	39
+	+	109	0
+	+	112	0
+	+	110	36
+	+	193	0
+	+	196	0
+	+	227	0
+	+	223	0
+	+	233	0
+	+	106	0
+	+	105	18
+	+	233	0
+	+	231	0
+	+	150	18
+	+	149	43
+	+	150	26
+	+	154	0
+	+	151	0
+	+	152	16
+	+	153	77
+	+	236	0
+	+	235	61
+	+	92	41
+	+	153	51
+	+	99	11
+	+	100	12
+	+	99	11
+	+	101	0
+	+	100	12
+	+	99	11
+	+	100	11
+	+	99	12
+	+	19	86
+	i	91	18
+	m	166	10
 
-> ~/Documents/Uni/Master/Semester3/General_Relativity/Exercises/Testat.txt
-	*	1696611885	0
-	"	4	0
-	^	3	14
-	.	3	13
-	+	4	9
-	+	5	0
-	+	6	0
+> ~/Documents/Uni/Master/Semester3/Internship/.gitignore
+	*	1697993324	0
+	"	14	0
+	^	5	19
+	.	5	18
+	+	3	0
 	+	8	0
-	+	10	0
-	+	12	0
-	+	14	0
-	+	15	9
-	+	15	27
-	+	5	8
-	+	6	7
-	+	7	8
-	+	8	7
-	+	9	7
-	+	10	7
-	+	11	7
-	+	12	7
-	+	13	7
-	+	14	7
-	+	15	7
-	+	17	6
-	+	3	13
+	+	9	0
+	+	11	22
+	+	12	20
+	+	13	4
+	+	14	5
+	+	9	30
+	+	5	18
 
-> ~/.config/alacritty/alacritty.yml
-	*	1696593239	0
-	"	15	24
-	^	14	22
-	.	14	25
-	+	6	14
-	+	6	10
-	+	14	25
+> ~/Documents/Freizeit/Running/times_bhfmeilen.csv
+	*	1697989707	0
+	"	7	21
+	^	7	22
+	.	7	22
+	+	6	25
+	+	7	0
+	+	7	240
+	+	7	22
 
-> ~/.vimrc
-	*	1696593120	0
-	"	1	0
-	^	72	30
-	.	73	0
-	+	61	24
-	+	74	16
-	+	76	0
-	+	76	52
-	+	76	73
-	+	76	0
-	+	76	27
-	+	76	52
-	+	76	69
-	+	76	27
-	+	76	52
-	+	76	69
-	+	76	0
-	+	64	0
+> ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/generate_sampling_mask.py
+	*	1697979876	0
+	"	19	48
+	^	19	49
+	.	19	48
+	+	8	9
+	+	58	0
+	+	8	9
+	+	13	36
+	+	58	0
+	+	8	10
+	+	18	53
+	+	69	7
 	+	69	0
-	+	64	0
-	+	77	0
-	+	70	21
-	+	72	29
-	+	70	0
-	+	72	30
-	+	73	0
-
-> ~/.vim/plugged/vim/colors/nord.vim
-	*	1696592906	0
-	"	567	13
-	^	258	52
-	.	258	52
-	+	92	35
-	+	258	50
-	+	258	0
-	+	80	64
-	+	80	70
-	+	80	61
-	+	258	52
-
-> ~/.config/picom/picom.conf
-	*	1696587862	0
-	"	128	0
-	^	128	18
-	.	128	0
-	+	34	27
-	+	35	2
-	+	33	3
-	+	34	1
-	+	35	3
-	+	34	2
-	+	35	3
-	+	34	3
-	+	35	3
-	+	114	25
-	+	51	14
-	+	53	17
-	+	55	19
-	+	53	18
-	+	55	19
-	+	56	0
-	+	55	20
-	+	53	18
-	+	125	0
-	+	127	0
-	+	125	0
-	+	128	0
-	+	128	6
-	+	128	2
-	+	128	0
-	+	128	14
-	+	128	19
-	+	129	0
-	+	128	0
+	+	10	0
+	+	11	33
+	+	19	51
+	+	9	20
+	+	11	0
+	+	10	0
+	+	14	22
+	+	19	48
 
 > ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/ff2d_calc_ellipsoids.py
-	*	1696116090	0
-	"	43	76
-	^	43	77
-	.	42	0
+	*	1697979867	0
+	"	45	0
+	^	17	26
+	.	17	26
 	+	18	58
 	+	13	46
 	+	11	32
@@ -852,19 +1016,752 @@ $
 	+	16	42
 	+	37	0
 	+	42	0
+	+	13	0
+	+	12	0
+	+	96	12
+	+	20	15
+	+	12	21
+	+	15	23
+	+	17	26
 
-> ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/generate_sampling_mask.py
-	*	1696115972	0
-	"	17	53
-	^	17	54
-	.	17	53
-	+	8	9
-	+	57	0
-	+	8	9
-	+	12	36
-	+	57	0
-	+	8	10
-	+	17	53
+> ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/generate_elllipsoids.py
+	*	1697979612	0
+	"	8	17
+	^	8	18
+	.	8	18
+	+	9	0
+	+	10	156
+	+	10	0
+	+	8	12
+	+	67	339
+	+	67	0
+	+	76	0
+	+	78	1
+	+	79	0
+	+	78	2
+	+	38	57
+	+	8	18
+
+> ~/.config/polybar/scripts/music_status
+	*	1697976358	0
+	"	5	84
+	^	5	85
+	.	5	85
+	+	2	11
+	+	2	21
+	+	2	0
+	+	2	21
+	+	2	0
+	+	2	46
+	+	2	49
+	+	2	24
+	+	2	31
+	+	2	30
+	+	2	0
+	+	2	8
+	+	2	33
+	+	2	15
+	+	2	24
+	+	2	16
+	+	2	0
+	+	2	2
+	+	2	22
+	+	2	52
+	+	2	0
+	+	2	4
+	+	2	0
+	+	2	9
+	+	2	0
+	+	2	14
+	+	2	24
+	+	2	4
+	+	2	24
+	+	3	19
+	+	2	0
+	+	2	23
+	+	3	19
+	+	2	0
+	+	3	19
+	+	2	0
+	+	3	0
+	+	1	11
+	+	2	0
+	+	1	11
+	+	3	0
+	+	1	9
+	+	3	48
+	+	3	1
+	+	3	0
+	+	3	71
+	+	3	61
+	+	3	66
+	+	3	77
+	+	3	87
+	+	7	11
+	+	3	88
+	+	5	89
+	+	7	13
+	+	5	5
+	+	7	14
+	+	5	86
+	+	5	0
+	+	3	89
+	+	5	83
+	+	5	0
+	+	5	85
+
+> ~/Scripts/playerctl.sh
+	*	1697972184	0
+	"	1	17
+	^	1	18
+	.	1	17
+	+	11	1
+	+	2	0
+	+	1	17
+
+> ~/.config/alacritty/alacritty.yml
+	*	1697960037	0
+	"	33	0
+	^	8	14
+	.	8	13
+	+	6	14
+	+	6	10
+	+	15	25
+	+	6	12
+	+	1	0
+	+	2	0
+	+	8	13
+
+> ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/LST/ff2d_calc_ellipsoids_LST.py
+	*	1697869806	0
+	"	40	53
+	^	40	54
+	.	39	0
+	+	12	20
+	+	11	13
+	+	13	24
+	+	12	28
+	+	6	17
+	+	39	0
+	+	40	52
+	+	12	27
+	+	39	0
+	+	40	54
+	+	12	27
+	+	39	0
+	+	12	26
+	+	39	0
+	+	12	27
+	+	39	0
+
+> ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/LST/generate_sampling_mask_LST.py
+	*	1697869684	0
+	"	8	17
+	^	8	18
+	.	8	17
+	+	19	46
+	+	8	17
+	+	11	20
+	+	8	17
+
+> ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/LST/functions_LST.py
+	*	1697869054	0
+	"	128	3
+	^	128	4
+	.	128	4
+	+	128	4
+
+> ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/.gitignore
+	*	1697815677	0
+	"	1	0
+
+> ~/.config/picom/picom.conf
+	*	1697814365	0
+	"	34	2
+	^	34	3
+	.	34	3
+	+	34	27
+	+	35	2
+	+	33	3
+	+	34	1
+	+	35	3
+	+	34	2
+	+	35	3
+	+	34	3
+	+	35	3
+	+	114	25
+	+	51	14
+	+	53	17
+	+	55	19
+	+	53	18
+	+	55	19
+	+	56	0
+	+	55	20
+	+	53	18
+	+	125	0
+	+	126	18
+	+	125	0
+	+	126	18
+	+	126	24
+	+	126	20
+	+	126	18
+	+	126	32
+	+	126	37
+	+	126	16
+	+	126	18
+	+	33	3
+	+	34	3
+	+	126	17
+	+	126	16
+	+	126	37
+	+	126	16
+	+	127	0
+	+	126	16
+	+	34	3
+
+> ~/vimwiki/Test.wiki
+	*	1697803975	0
+	"	1	0
+	^	7	0
+	.	7	0
+	+	1	8
+	+	2	0
+	+	3	5
+	+	4	3
+	+	5	3
+	+	6	3
+	+	7	0
+
+> ~/ww
+	*	1697803961	0
+	"	1	0
+
+> ~/vimwiki/Week.wiki
+	*	1697802929	0
+	"	1	0
+
+> ~/vimwiki/2.wiki
+	*	1697802925	0
+	"	1	0
+
+> ~/.vimrc
+	*	1697802286	0
+	"	1	0
+	^	36	119
+	.	36	118
+	+	60	24
+	+	73	16
+	+	75	0
+	+	75	52
+	+	75	73
+	+	75	0
+	+	75	27
+	+	75	52
+	+	75	69
+	+	75	27
+	+	75	52
+	+	75	69
+	+	75	0
+	+	63	0
+	+	68	0
+	+	63	0
+	+	76	0
+	+	69	21
+	+	71	29
+	+	69	0
+	+	71	30
+	+	72	0
+	+	73	0
+	+	45	25
+	+	46	1
+	+	46	0
+	+	36	118
+
+> ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/functions_LST.py
+	*	1697798041	0
+	"	1	0
+	^	39	0
+	.	126	23
+	+	86	0
+	+	126	29
+	+	128	4
+	+	126	23
+
+> ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/generate_elllipsoids_LST.py
+	*	1697788402	0
+	"	5	17
+	^	5	18
+	.	5	17
+	+	40	0
+	+	32	4
+	+	38	4
+	+	33	67
+	+	34	46
+	+	24	49
+	+	24	50
+	+	23	0
+	+	24	45
+	+	23	0
+	+	24	48
+	+	23	0
+	+	26	0
+	+	8	18
+	+	39	1
+	+	34	45
+	+	5	17
+
+> ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/generate_sampling_mask_LST.py
+	*	1697788275	0
+	"	3	17
+	^	3	18
+	.	3	17
+	+	39	0
+	+	3	17
+
+> ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/generate_sampling_mask_LST-1.py
+	*	1697788079	0
+	"	41	3
+	^	19	29
+	.	19	29
+	+	18	153
+	+	15	12
+	+	3	0
+	+	2	0
+	+	4	0
+	+	14	0
+	+	5	0
+	+	14	0
+	+	11	27
+	+	19	20
+	+	19	19
+	+	19	0
+	+	20	0
+	+	19	0
+	+	18	111
+	+	19	31
+	+	16	53
+	+	19	29
+
+> ~/Documents/Uni/Master/Semester3/Internship/Documentation/IDEA.txt
+	*	1697787823	0
+	"	1	1
+	^	1	2
+	.	1	1
+	+	5	19
+	+	4	3
+	+	6	0
+	+	4	3
+	+	5	20
+	+	8	6
+	+	11	39
+	+	9	14
+	+	12	1
+	+	11	81
+	+	14	14
+	+	18	116
+	+	1	3
+	+	1	1
+
+> ~/Documents/Uni/Master/Semester3/General_Relativity/Exercises/Testat.txt
+	*	1697787519	0
+	"	4	15
+	^	4	16
+	.	4	15
+	+	4	9
+	+	5	0
+	+	6	0
+	+	8	0
+	+	10	0
+	+	12	0
+	+	14	0
+	+	15	9
+	+	15	27
+	+	5	8
+	+	6	7
+	+	7	8
+	+	8	7
+	+	9	7
+	+	10	7
+	+	11	7
+	+	12	7
+	+	13	7
+	+	14	7
+	+	15	7
+	+	17	6
+	+	3	13
+	+	4	15
+
+> ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/ff2d_calc_ellipsoids_LST-1.py
+	*	1697786414	0
+	"	1	0
+	^	40	54
+	.	39	0
+	+	12	0
+	+	13	0
+	+	12	23
+	+	13	31
+	+	12	22
+	+	13	0
+	+	14	0
+	+	39	0
+
+> ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/functions.py
+	*	1697786396	0
+	"	88	0
+	^	11	22
+	.	11	21
+	+	23	0
+	+	24	0
+	+	23	0
+	+	24	0
+	+	23	0
+	+	10	0
+	+	11	3
+	+	128	0
+	+	71	18
+	+	71	20
+	+	101	18
+	+	108	58
+	+	11	21
+
+> ~/Documents/Freizeit/Running/running.py
+	*	1697780708	0
+	"	17	41
+	^	17	42
+	.	16	0
+	+	6	6
+	+	7	4
+	+	7	27
+	+	5	14
+	+	8	16
+	+	9	0
+	+	10	18
+	+	11	0
+	+	12	12
+	+	13	0
+	+	16	0
+	+	18	15
+	+	18	16
+	+	16	0
+	+	13	0
+	+	15	18
+	+	13	0
+	+	15	38
+	+	13	0
+	+	10	0
+	+	8	0
+	+	13	0
+	+	14	14
+	+	15	0
+	+	16	9
+	+	16	10
+	+	15	0
+	+	17	20
+	+	17	54
+	+	16	0
+	+	17	0
+	+	16	0
+	+	17	54
+	+	16	0
+	+	17	0
+	+	21	0
+	+	21	18
+	+	21	0
+	+	22	0
+	+	17	0
+	+	14	0
+	+	16	0
+	+	17	35
+	+	16	0
+	+	17	49
+	+	16	0
+	+	14	0
+	+	17	23
+	+	16	0
+	+	17	21
+	+	16	0
+
+> ~/NERD_tree_2
+	*	1697742697	0
+	"	9	1
+	.	1	0
+	+	1	0
+
+> ~/Downloads/20230929_131603.jpg
+	*	1697742687	0
+	"	2	0
+
+> ~/NERD_tree_1
+	*	1697742672	0
+	"	14	0
+	.	1	0
+	+	1	0
+
+> ~/.vimrc.plug
+	*	1697742443	0
+	"	6	21
+	^	6	22
+	.	6	22
+	+	3	0
+	+	5	0
+	+	3	24
+	+	5	21
+	+	6	22
+
+> /usr/share/vim/vim82/doc/help.txt
+	*	1697741543	0
+	"	3	3
+
+> /usr/share/vim/vim82/doc/pi_netrw.txt
+	*	1697741516	0
+	"	1299	56
+
+> ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/ff2d_calc_ellipsoids
+	*	1697733487	0
+	"	1	0
+
+> ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/generate_sampling_mask
+	*	1697709572	0
+	"	1	0
+
+> ~/Documents/Uni/Master/Semester3/Internship/generate_elllipsoids.py
+	*	1697701780	0
+	"	1	0
+
+> ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/Data/LST-1/mask/generate_sampling_mask_LST-1.py
+	*	1697699034	0
+	"	1	0
+
+> ~/Scripts/scrape_webpage.sh
+	*	1697632229	0
+	"	1	50
+	^	1	51
+	.	1	50
+	+	1	50
+
+> ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/LST/generate_sampling_mask_LST-1.py
+	*	1697630525	0
+	"	8	0
+	^	8	0
+	.	9	0
+	+	8	17
+	+	9	0
+	+	11	0
+	+	11	22
+	+	12	0
+	+	11	26
+	+	13	153
+	+	15	21
+	+	16	7
+	+	15	40
+	+	16	50
+	+	19	0
+	+	18	107
+	+	19	28
+	+	39	3
+	+	40	0
+	+	39	3
+	+	8	0
+	+	9	0
+
+> ~/Documents/Uni/Master/Semester3/Internship/CITATION.cff
+	*	1697614997	0
+	"	6	47
+	^	6	48
+	.	6	47
+	+	9	24
+	+	4	30
+	+	5	20
+	+	8	11
+	+	9	0
+	+	6	47
+
+> ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/MultipleSources/generate_sampling_mask_MS.py
+	*	1697538005	0
+	"	80	0
+
+> ~/Documents/Uni/Master/Semester2/Elementary Particle/Practical/EPP_Project/Report/main.tex
+	*	1697466884	0
+	"	106	50
+
+> ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/hyperparameters.txt
+	*	1697464900	0
+	"	444	53
+	^	444	55
+	.	444	40
+	+	438	3
+	+	437	3
+	+	438	6
+	+	436	8
+	+	437	8
+	+	438	8
+	+	436	17
+	+	437	17
+	+	436	18
+	+	438	19
+	+	441	3
+	+	434	24
+	+	443	7
+	+	441	16
+	+	442	16
+	+	443	16
+	+	441	16
+	+	442	16
+	+	441	16
+	+	442	16
+	+	438	29
+	+	437	46
+	+	444	40
+
+> ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/Data/Plots/Report/hyperparameters.txt
+	*	1697452242	0
+	"	1	0
+
+> ~/Documents/Uni/Master/Semester3/Internship/Documentation/hyperparameters.txt
+	*	1697213195	0
+	"	1	0
+
+> ~/Documents/Uni/Master/Semester3/Internship/old/Ellipsoids_old/ellip.py
+	*	1697207798	0
+	"	11	0
+	^	38	1
+	.	38	0
+	+	37	0
+	+	38	0
+	+	10	8
+	+	11	14
+	+	12	9
+	+	37	0
+	+	38	0
+	+	37	0
+	+	38	0
+
+> ~/Documents/Uni/Master/Semester3/Internship/old/Ellipsoids_old/ellip2.py
+	*	1697207791	0
+	"	1	0
+
+> ~/Documents/Uni/Master/Semester3/Internship/old/Ellipsoids_old/functions.py
+	*	1697207755	0
+	"	1	0
+
+> ~/Documents/Uni/Master/Semester3/Internship/old/Ellipsoids_old/ellip
+	*	1697207436	0
+	"	1	0
+
+> ~/.Xresources
+	*	1697144277	0
+	"	1	0
+	^	5	12
+	.	5	12
+	+	5	103
+	+	5	13
+	+	5	14
+	+	5	11
+	+	12	15
+	+	5	701
+	+	5	0
+	+	5	11
+	+	5	12
+
+> ~/.Xauthority
+	*	1697144267	0
+	"	1	0
+
+> /etc/X11/xorg.conf.d/00-keyboard.conf
+	*	1697144253	0
+	"	7	1
+	^	7	2
+	.	7	1
+	+	7	1
+
+> /etc/X11/NERD_tree_1
+	*	1697144228	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.bashrc
+	*	1697142486	0
+	"	118	40
+	^	118	41
+	.	119	0
+	+	117	2
+	+	118	41
+	+	119	0
+
+> /usr/bin/sh
+	*	1697141514	0
+	"	1	0
+
+> ~/.config/polybar/scripts/music_toggle
+	*	1697139894	0
+	"	3	0
+	^	3	0
+	.	3	0
+	+	3	0
+
+> ~/.config/polybar/von
+	*	1697139577	0
+	"	1	0
+
+> ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q_Prasenjit_report
+	*	1697028601	0
+	"	1	0
+	^	5	97
+	.	5	95
+	+	1	84
+	+	5	95
+
+> ~/.vim/plugged/vimwiki/doc/vimwiki.txt
+	*	1696977724	0
+	"	103	67
+
+> ~/Scripts/backup.sh
+	*	1696977024	0
+	"	6	0
+
+> ~/.vim/autoload/plug.vim
+	*	1696976941	0
+	"	1	0
+
+> ~/vimrc.plug
+	*	1696976894	0
+	"	1	0
+
+> ~/.vim/autoload/smooth_scroll.vim
+	*	1696976735	0
+	"	60	0
+	^	60	0
+	.	59	11
+	+	59	11
+
+> ~/.dir_colors
+	*	1696975730	0
+	"	7	0
+	^	251	7
+	.	251	6
+	+	251	6
+
+> ~/.vim/syntastic.vimrc
+	*	1696974269	0
+	"	33	0
+
+> ~/Documents/Uni/Master/Semester3/Internship/Documentation/Q
+	*	1696615766	0
+	"	1	0
+
+> ~/.vim/plugged/vim/colors/nord.vim
+	*	1696592906	0
+	"	567	13
+	^	258	52
+	.	258	52
+	+	92	35
+	+	258	50
+	+	258	0
+	+	80	64
+	+	80	70
+	+	80	61
+	+	258	52
 
 > ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/generate_sampling_mask_MS.py
 	*	1696115932	0
@@ -947,49 +1844,6 @@ $
 	+	40	29
 	+	42	0
 
-> ~/.config/polybar/scripts/music_status
-	*	1696088718	0
-	"	3	18
-	^	3	19
-	.	4	0
-	+	2	11
-	+	2	21
-	+	2	0
-	+	2	21
-	+	2	0
-	+	2	46
-	+	2	49
-	+	2	24
-	+	2	31
-	+	2	30
-	+	2	0
-	+	2	8
-	+	2	33
-	+	2	15
-	+	2	24
-	+	2	16
-	+	2	0
-	+	2	2
-	+	2	22
-	+	2	52
-	+	2	0
-	+	2	4
-	+	2	0
-	+	2	9
-	+	2	0
-	+	2	14
-	+	2	24
-	+	2	4
-	+	2	24
-	+	3	19
-	+	2	0
-	+	2	23
-	+	3	19
-	+	2	0
-	+	3	19
-	+	2	0
-	+	4	0
-
 > ~/.config/polybar/scripts/vpn2
 	*	1696088594	0
 	"	4	10
@@ -1001,27 +1855,6 @@ $
 > ~/.config/polybar/scripts/vpn
 	*	1696088480	0
 	"	1	0
-
-> ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/functions.py
-	*	1696084958	0
-	"	91	0
-	^	129	21
-	.	128	0
-	+	23	0
-	+	24	0
-	+	23	0
-	+	24	0
-	+	23	0
-	+	10	0
-	+	11	3
-	+	128	0
-
-> ~/.config/polybar/scripts/music_toggle
-	*	1696077390	0
-	"	3	21
-	^	3	22
-	.	3	22
-	+	3	22
 
 > ~/.config/polybar/scripts/music_next
 	*	1696077379	0
@@ -1067,46 +1900,9 @@ $
 	+	4	0
 	+	3	0
 
-> ~/.zshrc
-	*	1696074885	0
-	"	40	22
-	^	40	23
-	.	40	22
-	+	39	1
-	+	39	0
-	+	40	0
-	+	7	0
-	+	9	0
-	+	7	0
-	+	19	0
-	+	20	0
-	+	23	0
-	+	24	0
-	+	23	9
-	+	39	0
-	+	37	19
-	+	40	0
-	+	40	8
-	+	7	7
-	+	41	0
-	+	7	0
-	+	41	1
-	+	41	0
-	+	42	0
-	+	41	0
-	+	40	22
-
 > ~/.profile
 	*	1696074854	0
 	"	28	0
-
-> ~/.bashrc
-	*	1696074850	0
-	"	117	1
-	^	117	2
-	.	118	0
-	+	117	2
-	+	118	0
 
 > /etc/zsh/zshenv
 	*	1696074450	0
@@ -1234,22 +2030,6 @@ $
 	+	59	5
 	+	63	4
 
-> ~/Documents/Uni/Master/Semester3/Internship/Documentation/IDEA.txt
-	*	1696020755	0
-	"	12	1
-	^	12	2
-	.	11	81
-	+	5	19
-	+	4	3
-	+	6	0
-	+	4	3
-	+	5	20
-	+	8	6
-	+	11	39
-	+	9	14
-	+	12	1
-	+	11	81
-
 > ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/ff2d_calc_ellipsoids2.py
 	*	1696014745	0
 	"	46	0
@@ -1302,10 +2082,6 @@ $
 	+	44	0
 	+	16	43
 
-> ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/ff2d_calc_ellipsoids
-	*	1696014633	0
-	"	1	0
-
 > ~/Documents/Uni/Master/Semester3/Internship/README.md
 	*	1695991706	0
 	"	44	110
@@ -1351,33 +2127,6 @@ $
 	+	42	0
 	+	44	110
 	m	1	0
-
-> /etc/apt/sources.list.d/sur5r-i3.list
-	*	1695915335	0
-	"	1	3
-
-> ~/.Xresources
-	*	1695384427	0
-	"	5	11
-	^	5	12
-	.	5	12
-	+	5	103
-	+	5	13
-	+	5	14
-	+	5	11
-	+	12	15
-	+	5	701
-	+	5	0
-	+	5	11
-	+	5	12
-
-> ~/.Xauthority
-	*	1695369711	0
-	"	1	0
-
-> ~/.config/polybar/scripts/cpu
-	*	1695320423	0
-	"	3	0
 
 > ~/confi
 	*	1695319838	0
@@ -1509,20 +2258,4 @@ $
 
 > ~/.config/polybar/scripts/wm_class
 	*	1695122070	0
-	"	1	0
-
-> ~/.config/polybar/scripts/picom.conf
-	*	1695122052	0
-	"	1	0
-
-> ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/generate_elllipsoids.py
-	*	1695044757	0
-	"	57	14
-
-> ~/Documents/Uni/Master/Semester3/Internship/Ellipsoids/models/functions.py
-	*	1695044737	0
-	"	1	0
-
-> ~/Documents/Backups2/home/yuri/.vimrc
-	*	1695044310	0
 	"	1	0
