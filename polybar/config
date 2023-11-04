@@ -30,6 +30,7 @@ separators = #d8dee9
 windowclass = #d08770
 spotify = #a3be8c
 vpn = #d08770
+bluetooth = #88c0d0
 
 
 [bar/main]
@@ -66,7 +67,7 @@ POLYBAR_SHELL = /usr/bin/zsh
 
 ;==================== Toggle modules ======================
 
-modules-left = xworkspaces wlan vpn music
+modules-left = xworkspaces wlan vpn music bluetooth
 modules-center = windowclass
 modules-right = weather intbattery memory cpu pulseaudio brightness powermenu date
 
@@ -233,8 +234,15 @@ click-left = playerctl --player=spotify play-pause
 click-right = playerctl --player=spotify next
 format-prefix = " "
 format-foreground = ${colors.spotify}
-label = %output:0:45:...%
+label = %output:0:42:...%
 interval = 1
+
+
+[module/bluetooth]
+type = custom/script
+exec = bluetoothctl devices | cut -f2 -d' ' | while read uuid; do bluetoothctl info $uuid; done | grep -e "Name\|Connected: yes" | grep -B1 "yes" | head -n 1 | cut -d\  -f2- 
+format-prefix = "󰂯 "
+format-foreground = ${colors.bluetooth}
 
 ;==================== Final settings ======================
 
