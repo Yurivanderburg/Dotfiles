@@ -159,7 +159,7 @@ label-connected = %{F#F0C674}%ifname%%{F-} %local_ip%
 type = custom/script
 exec = ~/.config/polybar/scripts/vpn
 exec-if = pgrep "vpn"
-interval = 5
+interval = 1
 format-prefix = "VPN "
 format-prefix-foreground = ${colors.vpn}
 
@@ -243,6 +243,7 @@ type = custom/script
 exec = ~/.config/polybar/scripts/bluetooth
 format-prefix = "󰂯 "
 format-foreground = ${colors.bluetooth}
+interval = 1
 
 
 ;==================== Final settings ======================
