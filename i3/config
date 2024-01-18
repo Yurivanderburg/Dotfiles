@@ -101,8 +101,8 @@ smart_gaps on
 gaps inner 6
 gaps outer 6
 # Make floating windows smaller than screen:
-floating_minimum_size 1000x750
-floating_maximum_size 1750x1250
+floating_minimum_size 1500x1000
+floating_maximum_size 2000x1330
 
 # Disable title bar
 for_window [all] border pixel 2
