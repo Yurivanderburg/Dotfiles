@@ -1,0 +1,3 @@
+#!/bin/bash
+brightness=$(brightnessctl info | grep -e % | cut -f4 -d ' ' | cut -f1 -d ')' | cut -f2 -d '(') 
+echo $brightness

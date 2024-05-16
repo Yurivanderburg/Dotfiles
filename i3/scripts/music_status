@@ -1,0 +1,7 @@
+#!/usr/bin/zsh 
+
+artist=$(playerctl --player=spotify metadata | grep artist | cut -d : -f 2 | cut -b 21-40)
+
+song=$(playerctl --player=spotify metadata | grep title | cut -d : -f 2 | cut -b 21-55)
+
+echo $artist - $song
