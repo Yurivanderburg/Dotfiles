@@ -1,0 +1,14 @@
+#!/bin/bash
+# Bash script to set a non-linear brightness change, 
+# because the human eye percieves brighness not linearly but logarithmically.
+
+
+brightness=$(brightnessctl get)
+
+if (( $brightness < 51 )); then
+	brightnessctl set 2%-
+else
+	brightnessctl set 5%-
+fi
+
+
