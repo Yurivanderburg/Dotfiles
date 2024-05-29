@@ -214,7 +214,6 @@ bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/scripts/brightne
 
 
 
-
 ####################################
 # Keybindings for Window Settings: #
 ####################################

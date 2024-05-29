@@ -1,13 +1,14 @@
 #!/bin/bash
-# original source: https://gitlab.com/Nmoleo/i3-volume-brightness-indicator
+# Adapted from source: https://gitlab.com/Nmoleo/i3-volume-brightness-indicator
+# Completely rewritten the brightnessctl part. 
 
-# taken from here: https://gitlab.com/Nmoleo/i3-volume-brightness-indicator
-
-# See README.md for usage instructions
+# Config
 bar_color="#7f7fff"
 volume_step=5
-brightness_step=5
 max_volume=100
+brightness=$(brightnessctl get)
+brightness_icon=""
+
 
 # Uses regex to get volume from pactl
 function get_volume {
@@ -19,11 +20,6 @@ function get_mute {
     pactl get-sink-mute @DEFAULT_SINK@ | grep -Po '(?<=Mute: )(yes|no)'
 }
 
-# Uses regex to get brightness from xbacklight
-function get_brightness {
-    #xbacklight | grep -Po '[0-9]{1,3}' | head -n 1
-    brightnessctl | cut -b 27,28,29 | cut -d " " -f2
-}
 
 # Returns a mute icon, a volume-low icon, or a volume-high icon, depending on the volume
 function get_volume_icon {
@@ -37,12 +33,6 @@ function get_volume_icon {
         volume_icon=""
     fi
 }
-
-# Always returns the same icon - I couldn't get the brightness-low icon to work with fontawesome
-function get_brightness_icon {
-    brightness_icon=""
-}
-
 # Displays a volume notification using dunstify
 function show_volume_notif {
     volume=$(get_mute)
@@ -52,9 +42,8 @@ function show_volume_notif {
 
 # Displays a brightness notification using dunstify
 function show_brightness_notif {
-    brightness=$(get_brightness)
-    get_brightness_icon
-    dunstify -t 1000 -r 2593 -u normal "$brightness_icon $brightness%" -h int:value:$brightness -h string:hlcolor:$bar_color
+    brightness=$(get_brightness) 
+    dunstify -t 1000 -r 2593 -u normal "" "$brightness%" -h int:value:$brightness -h string:hlcolor:$bar_color
 }
 
 # Main function - Takes user input, "volume_up", "volume_down", "brightness_up", or "brightness_down"
@@ -85,14 +74,21 @@ case $1 in
 
     brightness_up)
     # Increases brightness and displays the notification
-    # xbacklight -inc $brightness_step -time 0 
-    brightnessctl set +5%
-    show_brightness_notif
+	if (( $brightness < 50 )); then
+		brightnessctl set 2%+
+	else
+		brightnessctl set 5%+
+	fi
+	show_brightness_notif
     ;;
 
     brightness_down)
     # Decreases brightness and displays the notification
-    xbacklight -dec $brightness_step -time 0
-    show_brightness_notif
+	if (( $brightness < 51 )); then
+		brightnessctl set 2%-
+	else
+		brightnessctl set 5%-
+	fi
+	show_brightness_notif
     ;;
 esac
