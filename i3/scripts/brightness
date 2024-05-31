@@ -1,3 +1,62 @@
 #!/bin/bash
-brightness=$(brightnessctl info | grep -e % | cut -f4 -d ' ' | cut -f1 -d ')' | cut -f2 -d '(') 
-echo $brightness
+# Code logic from https://gitlab.com/Nmoleo/i3-volume-brightness-indicator
+# But with custom non-linear brightness scaling (since human perception of brightness
+# is not linear.
+
+# Config
+bar_color="#7f7fff"
+max_brightness=255
+
+
+normalized_brightness() {
+	brightness=$(brightnessctl get)
+	echo "scale=0; 100 * $brightness / $max_brightness" | bc 
+}
+
+
+send_notification() {
+	norm_brightness=$(normalized_brightness)
+	dunstify -t 1000 -r 2593 -u normal " $norm_brightness%" -h int:value:$norm_brightness -h string:hlcolor:$bar_color
+}
+
+
+increase_brightness() {
+	brightness=$(brightnessctl get)
+	
+	if (( $brightness < 15 )); then
+    	brightnessctl set 3+
+	elif (( $brightness < 60 )); then
+    	brightnessctl set 5+
+	else
+    	brightnessctl set 16+
+	fi
+}
+
+
+decrease_brightness() {
+	brightness=$(brightnessctl get)
+
+	if (( $brightness < 15 )); then
+    	brightnessctl set 3-
+	elif (( $brightness < 60 )); then
+    	brightnessctl set 5-
+	else
+    	brightnessctl set 16-
+	fi
+}
+
+
+## Main function
+case $1 in
+	brightness_up)
+	# Increase brightness, then send notification
+	increase_brightness
+	send_notification
+	;;
+	
+	brightness_down)
+	# Decrease brightness, then send notification
+	decrease_brightness
+	send_notification
+		;;
+	esac 
