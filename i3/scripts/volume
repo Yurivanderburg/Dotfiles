@@ -13,6 +13,12 @@ get_volume() {
 }
 
 
+get_volume_bar() {
+	string=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '[0-9]{1,3}(?=%)' | head -1)
+	string+="%"
+	echo $string
+}
+
 get_mute() {
     pactl get-sink-mute @DEFAULT_SINK@ | grep -Po '(?<=Mute: )(yes|no)'
 }
@@ -67,4 +73,8 @@ case $1 in
     pactl set-sink-mute @DEFAULT_SINK@ toggle
     send_notification
     ;;
+
+	volume_output)
+	# Print volume to bar
+	get_volume_bar
 esac

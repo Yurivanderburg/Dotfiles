@@ -13,6 +13,14 @@ normalized_brightness() {
 	echo "scale=0; 100 * $brightness / $max_brightness" | bc 
 }
 
+get_brightness_norm() {
+	brightness=$(brightnessctl get)
+	output=$(echo "scale=0; 100 * $brightness / $max_brightness" | bc)
+   	output+="%"
+	echo $output
+}
+
+
 
 send_notification() {
 	norm_brightness=$(normalized_brightness)
@@ -58,5 +66,8 @@ case $1 in
 	# Decrease brightness, then send notification
 	decrease_brightness
 	send_notification
-		;;
+	;;
+
+	brightness_output)
+	get_brightness_norm
 	esac 
