@@ -2,19 +2,19 @@
 size = 10
 
 [font.bold]
-family = "monospace"
+family = "JetBrains Mono"
 style = "Bold"
 
 [font.bold_italic]
-family = "monospace"
+family = "JetBrains Mono"
 style = "Bold Italic"
 
 [font.italic]
-family = "monospace"
+family = "JetBrains Mono"
 style = "Italic"
 
 [font.normal]
-family = "monospace"
+family = "JetBrains Mono"
 style = "Regular"
 
 
