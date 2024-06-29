@@ -12,8 +12,8 @@ use utf8;
 use Getopt::Long;
 
 # default values
-my $t_warn = $ENV{T_WARN} // 50;
-my $t_crit = $ENV{T_CRIT} // 80;
+my $cpu_warn = 75;
+my $cpu_crit =  90;
 my $cpu_usage = -1;
 my $decimals = $ENV{DECIMALS} // 0;
 my $label = $ENV{LABEL} // "";
@@ -25,12 +25,6 @@ sub help {
     print "-d <decimals>:  Use <decimals> decimals for percentage (default is $decimals) \n"; 
     exit 0;
 }
-
-GetOptions("help|h" => \&help,
-           "w=i"    => \$t_warn,
-           "c=i"    => \$t_crit,
-           "d=i"    => \$decimals,
-);
 
 # Get CPU usage
 $ENV{LC_ALL}="en_US"; # if mpstat is not run under en_US locale, things may break, so make sure it is
@@ -52,11 +46,11 @@ print "${label}";
 printf "%02.${decimals}f%%\n", $cpu_usage;
 
 # Print color, if needed
-if ($cpu_usage >= $t_crit) {
-    print "#FF2000\n";
-    exit 33;
-} elsif ($cpu_usage >= $t_warn) {
-    print "#FFFC00\n";
+if ($cpu_usage >= $cpu_crit) {
+    print "#ED8796\n";
+} elsif ($cpu_usage >= $cpu_warn) {
+    print "#EED49F\n";
+} else {
+	print "#A6DA95\n";
 }
-
 exit 0;
