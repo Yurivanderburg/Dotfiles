@@ -5,7 +5,7 @@
 palette = "catppuccin_macchiato"
 
 [character]
-success_symbol = "[❯](fg:green)"
+success_symbol ="[❯](fg:green)"
 error_symbol = "[❯](fg:red)"
 vimcmd_symbol = "[❮](fg:green)"
 
@@ -57,7 +57,7 @@ symbol = " "
 style = "pink bold"
 
 [git_status]
-format = "[[$conflicted](yellow)[$untracked](text)[$modified$renamed](orange)[$staged](green)[$deleted](red)($ahead_behind$stashed)]($style)"
+format = '[\([$conflicted](yellow)[$untracked](pink)[$modified$renamed](pink)[$staged](green)[$deleted](red)($ahead_behind$stashed)\)]($style) '
 conflicted = " $count "
 untracked = " $count "
 modified = " $count "
@@ -65,7 +65,7 @@ deleted = " $count "
 staged = " $count "
 renamed = " $count "
 stashed = " $count "
-style = "maroon"
+style = "pink"
 
 [golang]
 symbol = " "
