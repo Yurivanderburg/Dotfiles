@@ -303,6 +303,7 @@ bindsym $mod+k exec --no-startup-id /usr/bin/keepassxc
 assign [class="(?i)firefox"] $ws2
 assign [class="Thunar"] $ws3
 assign [class="jetbrains-pycharm-ce"] $ws4
+assign [class="Code"] $ws4
 assign [class="Darktable"] $ws5
 assign [class="KeePassXC"] $ws6
 assign [class="Spotify"] $ws7

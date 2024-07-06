@@ -24,7 +24,7 @@ get_brightness_norm() {
 
 send_notification() {
 	norm_brightness=$(normalized_brightness)
-	dunstify -t 1000 -r 2593 -u normal " $norm_brightness%" -h int:value:$norm_brightness -h string:hlcolor:$bar_color
+	dunstify -t 1000 -r 2593 -u normal "  $norm_brightness%" -h int:value:$norm_brightness -h string:hlcolor:$bar_color
 }
 
 

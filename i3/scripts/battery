@@ -105,10 +105,10 @@ if ($status eq 'discharging') {
 	} elsif ($percent < 85) {
 		print "#a6da95\n";
 	}
-
-	if ($percent < 5) {
-		exit(33);
-	}
+	#
+	#if ($percent < 5) {
+	#	exit(33);
+	#}
 }
 
 exit(0);
