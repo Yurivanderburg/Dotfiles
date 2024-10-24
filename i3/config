@@ -316,6 +316,9 @@ for_window [class=Thunar] focus
 for_window [class=KeePassXC] focus
 for_window [class=Darktable] focus
 
+# set opacity to 0 for zoom screensharing
+exec --no-startup-id picom -o 0
+
 ##############
 # compositor #
 ##############
