@@ -173,7 +173,8 @@ bindcode $mod+Shift+90 	 move container to workspace  $ws10
 #############################
 
 # Kill focused window
-bindsym $mod+q kill
+bindsym $mod+Shift+q kill
+bindsym $mod+q exec --no-startup-id bash -c '[[ $(echo -e "Yes\nNo" | dmenu -i -p "Close program?") == "Yes" ]] && i3-msg kill'
 
 # Exit-menu
 bindsym $mod+Shift+e exec --no-startup-id ~/.config/i3/scripts/powermenu
