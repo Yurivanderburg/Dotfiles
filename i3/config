@@ -293,8 +293,8 @@ workspace $ws10 output HDMI-A-0
 
 # Start Apps
 bindsym $mod+Return exec --no-startup-id /usr/bin/alacritty
+bindsym $mod+Shift+Return exec --no-startup-id /usr/bin/gnome-terminal
 bindsym $mod+e exec --no-startup-id /usr/bin/alacritty -e "ranger"
-bindsym $mod+p exec --no-startup-id /usr/bin/alacritty -e "ranger ~/Pictures/Photography"
 bindsym $mod+w exec --no-startup-id /usr/bin/firefox
 bindsym $mod+n exec --no-startup-id /usr/bin/thunar
 bindsym Print exec --no-startup-id scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
