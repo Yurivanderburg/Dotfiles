@@ -1,5 +1,7 @@
 [font]
 size = 10
+#size = 8
+
 
 [font.bold]
 family = "JetBrains Mono Nerd Font"

@@ -173,15 +173,16 @@ bindcode $mod+Shift+90 	 move container to workspace  $ws10
 #############################
 
 # Kill focused window
-bindsym $mod+Shift+q kill
-bindsym $mod+q exec --no-startup-id bash -c '[[ $(echo -e "Yes\nNo" | dmenu -i -p "Close program?") == "Yes" ]] && i3-msg kill'
+bindsym $mod++q kill
+bindsym $mod+Shift+q exec --no-startup-id bash -c '[[ $(echo -e "Yes\nNo" | dmenu -i -p "Close program?") == "Yes" ]] && i3-msg kill'
 
 # Exit-menu
 bindsym $mod+Shift+e exec --no-startup-id ~/.config/i3/scripts/powermenu
 
 # Lock the system
 # lock with a picture:
-bindsym $mod+l exec --no-startup-id i3lock -i ~/.config/i3/wallpaper/20230927_IAC_50.png -f
+#bindsym $mod+l exec --no-startup-id i3lock -i ~/.config/i3/wallpaper/20230927_IAC_50.png -f
+bindsym $mod+l exec --no-startup-id dm-tool lock
 # lock by blurring the screen:
 #bindsym $mod+l exec --no-startup-id ~/.config/i3/scripts/blur-lock
 
