@@ -1,4 +1,4 @@
-#!/bin/bash
+#/bin/bash
 # Adapted from source: https://gitlab.com/Nmoleo/i3-volume-brightness-indicator
 # TODO: Non-linear scaling? 
 
@@ -43,7 +43,7 @@ send_notification() {
     volume=$(get_mute)
     
 	get_volume_icon
-   	dunstify -t 1000 -r 2593 -u normal "$volume_icon $volume%" -h int:value:$volume -h string:hlcolor:$bar_color
+   	dunstify -t 1000 -u normal "$volume_icon $volume%" -h string:x-dunst-stack-tag:test  -h int:value:$volume -h string:hlcolor:$bar_color
 }
 
 
